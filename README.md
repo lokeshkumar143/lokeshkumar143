@@ -1,8 +1,11 @@
-<h1 align="center">Hi 👋, I'm Lokesh Kumar S</h1>
-<h3 align="center">📱 iOS Developer | SwiftUI & UIKit | Mobile Application Engineering</h3>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1e3c72,100:2E9EF7&height=220&section=header&text=Lokesh%20Kumar%20S&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=iOS%20Developer%20%7C%20SwiftUI%20%26%20UIKit%20%7C%20Mobile%20App%20Engineering&descAlignY=58&descSize=20" />
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=2E9EF7&center=true&vCenter=true&width=650&lines=Building+sleek+iOS+apps+with+SwiftUI+%26+UIKit;Intern+%E2%86%92+Full-Time+Developer+in+2+months;Technical+Trainer+mentoring+future+iOS+devs;Shipping+clean+code+%2C+one+commit+at+a+time." alt="Typing SVG" />
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="500">
 </p>
 
 <p align="center">
@@ -40,6 +43,10 @@
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=swift,xcode,firebase,php,mysql,git,github,postman,figma&perline=9" />
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="100%">
 </p>
 
 <table align="center">
@@ -99,6 +106,24 @@ AI-powered iOS tool using deep learning to classify skin ulcer images as *Healin
 </td>
 </tr>
 </table>
+
+---
+
+### 🏙️ My Contributions — 3D Isometric Skyline
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/lokeshkumar143/lokeshkumar143/output/github-contribution-grid-snake-dark.svg" width="100%" alt="3D contribution skyline — auto-generates once the Action below runs" />
+</p>
+
+> 🌆 This rotating **3D skyline** of your commit history builds automatically via a free GitHub Action ([`yoshi389111/github-profile-3d-contrib`](https://github.com/yoshi389111/github-profile-3d-contrib)) — setup steps are at the bottom of this file.
+
+---
+
+### 🏆 Trophy Case
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=lokeshkumar143&theme=algolia&no-frame=true&no-bg=true&margin-w=15&row=1&column=7" />
+</p>
 
 ---
 
