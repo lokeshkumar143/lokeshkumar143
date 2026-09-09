@@ -1,111 +1,135 @@
-# LOKESH KUMAR .S
+<h1 align="center">Hi 👋, I'm Lokesh Kumar S</h1>
+<h3 align="center">📱 iOS Developer | SwiftUI & UIKit | Mobile Application Engineering</h3>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lokeshkumar143/lokeshkumar143/main/assets/banner_dark_animated.svg">
-  <img alt="Animated GitHub Profile Banner" src="https://raw.githubusercontent.com/lokeshkumar143/lokeshkumar143/main/assets/banner_dark_animated.svg">
-</picture>
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=2E9EF7&center=true&vCenter=true&width=650&lines=Building+sleek+iOS+apps+with+SwiftUI+%26+UIKit;Intern+%E2%86%92+Full-Time+Developer+in+2+months;Technical+Trainer+mentoring+future+iOS+devs;Shipping+clean+code+%2C+one+commit+at+a+time." alt="Typing SVG" />
+</p>
 
----
+<p align="center">
+  <a href="https://linkedin.com/in/lokesh-kumar-s-16984a268/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="mailto:lokeshkumar142005@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <a href="https://github.com/lokeshkumar143" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
 
-## 📊 Stats
-
-Stats cards coming soon — self-hosted github-readme-stats instance pending setup.
-
----
-
-## 🐍 Contribution Graph
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lokeshkumar143/lokeshkumar143/output/snake_dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/lokeshkumar143/lokeshkumar143/output/snake_light.svg">
-  <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/lokeshkumar143/lokeshkumar143/output/snake_dark.svg">
-</picture>
-
----
-
-## 🔗 Connect
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-LOKESH%20KUMAR%20.S-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lokesh-kumar-s-16984a268/)&nbsp;&nbsp;[![Gmail](https://img.shields.io/badge/Email-lokeshkumar142005%40gmail.com-10B981?style=for-the-badge&logo=gmail&logoColor=white)](mailto:lokeshkumar142005@gmail.com)&nbsp;&nbsp;[![Portfolio](https://img.shields.io/badge/Portfolio-Coming%20Soon-22D3EE?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lokeshkumar143)
-
-</div>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=lokeshkumar143&label=Profile%20Views&color=2E9EF7&style=for-the-badge" alt="profile views" />
+  <img src="https://img.shields.io/badge/Currently-iOS%20Developer%20@%20SIMATS-brightgreen?style=for-the-badge" />
+</p>
 
 ---
 
-## 👨‍💻 About
+### 🚀 About Me
 
-**iOS & Full-Stack Developer** | SIMATS ENGINEERING
+- 🎓 Went from **Intern → Full-Time iOS Developer in just 2 months** at SIMATS Engineering Institution
+- 🍎 I design, build, and ship **SwiftUI / UIKit** apps — from wireframe to the App Store
+- 👨‍🏫 Currently a **Technical Trainer**, mentoring the next generation of iOS developers
+- 🧪 I also drive quality across **4 testing disciplines**: Selenium, Appium, Load & Security testing
+- 🩺 Built healthcare-focused iOS apps — patient recovery trackers & an AI-powered skin ulcer predictor
+- 🌱 Always leveling up in backend integration, Firebase, and clean architecture
+- ⚡ Fun fact: I ship fast, ship clean, and take real ownership of outcomes
 
-- **Current Role:** iOS Developer Intern @ SIMATS ENGINEERING (2025–now)
-- **Location:** Vellore, India  
-- **Education:** B.E. Computer Science & Engineering, SIMATS ENGINEERING (2022–2026, CGPA: 7.9)
-- **Status:** Building + Learning + Shipping
+---
 
 ### 🛠️ Tech Stack
 
-**Languages:** Swift, PHP, English  
-**Frontend:** SwiftUI, Figma, App Store Connect  
-**Backend:** PHP, REST API Integration  
-**Database:** MySQL  
-**Infrastructure:** Xcode, VS Code, Postman, Git & GitHub, TestFlight, App Deployment
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=swift,xcode,firebase,php,mysql,git,github,postman,figma&perline=9" />
+</p>
 
-### 🚀 Featured Project
+<table align="center">
+<tr>
+<td valign="top" width="50%">
 
-**RecovFit** — Personal Fitness Trainer for Patient Recovery
-- Developed a healthcare iOS application using Swift, SwiftUI, and Xcode
-- Integrated REST APIs, appointment booking, doctor-patient consultation, and AI chatbot
-- Built PHP/MySQL backend for secure data management and real-time updates
-- Designed modern UI following Apple's HIG principles
+**📱 Mobile Development**
+```
+SwiftUI · UIKit · Xcode
+Core Location · MapKit
+```
 
----
+**🔗 Backend & Integration**
+```
+Firebase (Realtime DB, Auth, Push)
+REST APIs · PHP · MySQL
+AI Chatbot Integration
+```
 
-## 📋 Setup Checklist
+</td>
+<td valign="top" width="50%">
 
-This profile uses animated assets and automated workflows. Here's what you need to do by hand:
+**🧪 Testing & QA**
+```
+Selenium (Web) · Appium (Mobile)
+Backend Vulnerability Testing
+Load Testing · Postman
+```
 
-### Phase 1: Banner (✓ Done)
-- [ ] Create `assets/` folder in repo
-- [ ] Upload `banner_dark_animated.svg` to `assets/`
-- [ ] Verify the banner renders in your README preview
+**⚙️ Tools & Practices**
+```
+Git · Agile Development
+Code Review · UI/UX Best Practices
+```
 
-### Phase 2: Stats Cards (Coming Soon)
-- [ ] Fork [anuraghazra/github-readme-stats](https://github.com/anuraghazra/github-readme-stats)
-- [ ] Create GitHub classic token (Settings → Developer settings → Tokens (classic)) with `repo` scope
-- [ ] Deploy fork to Vercel, add `PAT_1` environment variable
-- [ ] Get Vercel instance URL and configure stat cards
-
-### Phase 3: Contribution Snake (✓ Done)
-- [ ] Copy `snake.yml` to `.github/workflows/snake.yml`
-- [ ] Go to repo **Settings → Actions → General → Workflow permissions**
-- [ ] Select **"Read and write"** (⚠️ repo settings, not account settings)
-- [ ] Trigger the workflow manually from Actions tab
-- [ ] Wait for ✓ green check, then `output` branch will appear
-- [ ] The snake SVGs will auto-update every 12 hours
-
-### Phase 4: Social Badges (✓ Done)
-- [ ] Badges are live in the README — no setup needed
-
----
-
-## 📝 Notes
-
-**Banner Animation:**
-- Intro: ~3.2 seconds (dots fade in)
-- Loop: ~14.2 seconds (portrait → Swift → Bracket → Database → portrait)
-- Uses optimal transport for smooth logo morphing
-- Dithered at 300×340 resolution, scaled 1.3× in the frame
-
-**Contribution Snake:**
-- Updates every 12 hours automatically
-- Also runs on push to `main` or manual trigger
-- Theme: Light/dark mode aware
-- Dark mode empty cells: `#2d3343` (visible on GitHub's `#0d1117` background)
-
-**File Sizes:**
-- Banner: ~1.1 MB (animated SVG with 900 morphing dots + portrait dither)
-- Snake: Auto-generated by Platane/snk, typically 50–100 KB per variant
+</td>
+</tr>
+</table>
 
 ---
 
-**Happy shipping! 🚀**
+### 🌟 Featured Projects
+
+<table align="center">
+<tr>
+<td width="50%">
+
+#### 🏥 Personal Fitness Trainer for Patient Recovery
+iOS healthcare app built with **Swift & SwiftUI** — appointment booking, doctor-patient consultation, REST API integration, and an in-app AI chatbot. Backed by a **PHP/MySQL** server for secure, real-time data.
+
+</td>
+<td width="50%">
+
+#### 🩹 Smart Ulcer Predictor
+AI-powered iOS tool using deep learning to classify skin ulcer images as *Healing*, *Not Healing*, or *Normal*. Seamless image upload → prediction pipeline, with built-in medical disclaimers for responsible use.
+
+</td>
+</tr>
+</table>
+
+---
+
+### 📊 GitHub Stats
+
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=lokeshkumar143&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=lokeshkumar143&layout=compact&theme=tokyonight&hide_border=true" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lokeshkumar143&theme=tokyonight&hide_border=true" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=lokeshkumar143&theme=tokyo-night&hide_border=true" width="100%" />
+</p>
+
+---
+
+### 🎓 Education & Certifications
+
+- 🏫 **B.E. Computer Science and Engineering** — SIMATS Engineering, Sriperumbudur (2022 – 2026) · CGPA 7.9
+- 📜 **Oracle AI Database SQL Certified Associate**
+
+---
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake/github-contribution-grid-snake.svg" alt="snake animation" />
+</p>
+
+<p align="center">
+  <i>"Ships fast, ships clean, and owns the outcome."</i> ✨
+</p>
