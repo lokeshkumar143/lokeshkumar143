@@ -112,10 +112,10 @@ AI-powered iOS tool using deep learning to classify skin ulcer images as *Healin
 ### 🏙️ My Contributions — 3D Isometric Skyline
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/lokeshkumar143/lokeshkumar143/output/github-contribution-grid-snake-dark.svg" width="100%" alt="3D contribution skyline — auto-generates once the Action below runs" />
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution skyline" />
 </p>
 
-> 🌆 This rotating **3D skyline** of your commit history builds automatically via a free GitHub Action ([`yoshi389111/github-profile-3d-contrib`](https://github.com/yoshi389111/github-profile-3d-contrib)) — setup steps are at the bottom of this file.
+> 🌆 This builds automatically once you add the `profile-3d.yml` workflow (provided separately) — see setup steps below.
 
 ---
 
@@ -151,10 +151,40 @@ AI-powered iOS tool using deep learning to classify skin ulcer images as *Healin
 
 ---
 
+### 💬 Ask Me About
+
 <p align="center">
-  <img src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake/github-contribution-grid-snake.svg" alt="snake animation" />
+  <img src="https://img.shields.io/badge/SwiftUI-FA7343?style=for-the-badge&logo=swift&logoColor=white" />
+  <img src="https://img.shields.io/badge/UIKit-000000?style=for-the-badge&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
+  <img src="https://img.shields.io/badge/App%20Store%20Deployment-0D96F6?style=for-the-badge&logo=appstore&logoColor=white" />
+  <img src="https://img.shields.io/badge/Mobile%20QA%20Testing-52C41A?style=for-the-badge&logo=testinglibrary&logoColor=white" />
+</p>
+
+### ✨ Random Dev Quote
+
+<p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
+</p>
+
+---
+
+### 🐍 Snake Eating My Contributions
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/lokeshkumar143/lokeshkumar143/output/github-contribution-grid-snake-dark.svg" alt="snake animation" />
+</p>
+
+---
+
+### 🌍 Visitors Map
+
+<p align="center">
+  <img src="https://profile-counter.glitch.me/lokeshkumar143/count.svg" />
 </p>
 
 <p align="center">
   <i>"Ships fast, ships clean, and owns the outcome."</i> ✨
 </p>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:2E9EF7,100:1e3c72&height=120&section=footer" />
