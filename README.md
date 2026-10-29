@@ -144,13 +144,13 @@
 <h2 align="center">📊 GitHub Analytics &amp; Activity</h2>
 
 <p align="center">
-  <img src="https://github-readme-stats-fast.vercel.app/api?username=lokeshkumar143&show_icons=true&bg_color=0a0a0a&title_color=ef4444&text_color=f3f4f6&icon_color=ef4444&border_color=ef4444&border_radius=8" width="100%" style="max-width: 440px;" alt="GitHub Stats" />
+  <img src="https://github-stats-extended.vercel.app/api?username=lokeshkumar143&show_icons=true&bg_color=0a0a0a&title_color=ef4444&text_color=f3f4f6&icon_color=ef4444&border_color=ef4444&border_radius=8" width="100%" style="max-width: 440px;" alt="GitHub Stats" />
   &nbsp;&nbsp;
-  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=lokeshkumar143&layout=compact&bg_color=0a0a0a&title_color=ef4444&text_color=f3f4f6&border_color=ef4444&border_radius=8" width="100%" style="max-width: 350px;" alt="Top Languages" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=lokeshkumar143&layout=compact&bg_color=0a0a0a&title_color=ef4444&text_color=f3f4f6&border_color=ef4444&border_radius=8" width="100%" style="max-width: 350px;" alt="Top Languages" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lokeshkumar143&theme=blood&hide_border=false&border=ef4444&background=0a0a0a&ring=ef4444&fire=ef4444&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=ef4444&sideLabels=ef4444&dates=999999" width="100%" style="max-width: 480px;" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com/?user=lokeshkumar143&theme=blood&hide_border=false&border=ef4444&background=0a0a0a&ring=ef4444&fire=ef4444&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=ef4444&sideLabels=ef4444&dates=999999" width="100%" style="max-width: 480px;" alt="GitHub Streak" />
 </p>
 
 <p align="center">
