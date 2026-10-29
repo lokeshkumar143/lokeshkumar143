@@ -112,19 +112,19 @@
 
   <!-- Main Name Header -->
   <text x="450" y="105" text-anchor="middle" class="title-text" fill="url(#red-glow-grad)" filter="url(#glow-red)">
-    LOKESH KUMAR
+    LOKESH KUMAR S
   </text>
   <text x="450" y="105" text-anchor="middle" class="title-text" fill="#ffffff" fill-opacity="0.95">
-    LOKESH KUMAR
+    LOKESH KUMAR S
   </text>
 
   <!-- Subtitle Tagline -->
   <text x="450" y="142" text-anchor="middle" class="subtitle-text">
-    <tspan fill="#ff4d6d">COMPUTER SCIENCE ENGINEER</tspan>
+    <tspan fill="#ff4d6d">IOS &amp; MOBILE DEVELOPER</tspan>
     <tspan fill="#64748b"> &#8226; </tspan>
-    <tspan fill="#f1f5f9">FULL STACK</tspan>
+    <tspan fill="#f1f5f9">SWIFTUI &amp; UIKIT</tspan>
     <tspan fill="#64748b"> &#8226; </tspan>
-    <tspan fill="#ff4d6d">AI &amp; IoT DEVELOPER</tspan>
+    <tspan fill="#ff4d6d">FULL STACK &amp; QA</tspan>
   </text>
 
   <!-- Decorative Sleek Red Line with Diamond -->
