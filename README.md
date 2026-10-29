@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/lokeshkumar143">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2800&pause=1000&color=EF4444&center=true&vCenter=true&multiline=false&width=650&height=42&lines=Hi%20there!%20I'm%20Lokesh%20Kumar%20S%20%F0%9F%91%8B;Building%20sleek%20iOS%20apps%20with%20SwiftUI%20%26%20UIKit%20%F0%9F%93%B1;Intern%20%E2%86%92%20Full-Time%20iOS%20Developer%20%E2%9A%A1;Technical%20Trainer%20mentoring%20future%20devs%20%F0%9F%92%BB;Shipping%20clean%20code%2C%20one%20commit%20at%20a%20time%20%F0%9F%9A%80" width="100%" style="max-width: 650px;" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2800&pause=1000&color=EF4444&center=true&vCenter=true&multiline=false&width=650&height=42&lines=Hi%20there!%20I'm%20Lokesh%20Kumar%20S%20%F0%9F%91%8B;iOS%20Developer%20%7C%20SwiftUI%20%26%20UIKit%20%F0%9F%93%B1;Intern%20%E2%86%92%20Full-Time%20iOS%20Developer%20in%202%20Months%20%E2%9A%A1;Technical%20Trainer%20mentoring%20future%20devs%20%F0%9F%92%BB;Shipping%20clean%20code%2C%20one%20commit%20at%20a%20time%20%F0%9F%9A%80" width="100%" style="max-width: 650px;" alt="Typing SVG" />
   </a>
 </p>
 
@@ -34,7 +34,7 @@
 
 ---
 
-<h2 align="center">🔴 About Me</h2>
+<h2 align="center">🔴 Professional Summary</h2>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=3000&pause=1000&color=F87171&center=true&vCenter=true&multiline=false&width=600&height=28&lines=Driven+by+curiosity.+Building+for+impact.+Coding+the+future." width="100%" style="max-width: 600px;" alt="Typing Quote" />
@@ -45,8 +45,8 @@
 </p>
 
 <p align="center">
-  Hey! I'm <b>Lokesh Kumar S</b>, an enthusiastic <b>iOS Developer & Software Engineer</b> based in India.<br />
-  I specialize in architecting native mobile experiences using <b>SwiftUI & UIKit</b>, full-stack backends with Firebase & MySQL, and rigorous quality assurance across multiple testing disciplines.
+  Hey! I'm <b>Lokesh Kumar S</b>, an <b>iOS Developer & Technical Trainer</b> based in India.<br />
+  Promoted from <b>Intern → Full-Time Developer in just two months</b> at SIMATS Engineering Institution. I own the full mobile application lifecycle end-to-end: architecting native <b>SwiftUI & UIKit</b> interfaces, integrating RESTful APIs, and shipping polished production apps live to the App Store.
 </p>
 
 <p align="center">
@@ -54,23 +54,23 @@
   &nbsp;
   <img src="https://img.shields.io/badge/Degree-B.E._Computer_Science-DC2626?style=flat-square" alt="Degree" />
   &nbsp;
-  <img src="https://img.shields.io/badge/Focus-iOS_%26_Full_Stack-111111?style=flat-square" alt="Focus" />
+  <img src="https://img.shields.io/badge/Specialization-iOS_Application_Engineering-111111?style=flat-square" alt="Specialization" />
 </p>
 
 <p align="center">
-  💬 <b>Key Highlights:</b> Mentoring future developers as a Technical Trainer, shipping production-grade apps from wireframes to the App Store, and building healthcare AI solutions.<br />
-  ⚡ <b>Philosophy:</b> <i>"Ships fast, ships clean, and owns the outcome."</i>
+  💬 <b>Core Competencies:</b> Native iOS Engineering, Cross-Functional Mentorship, App Store Deployments, and QA across 4 Testing Disciplines.<br />
+  ⚡ <b>Philosophy:</b> <i>"Ships fast, ships clean, and takes real ownership of outcomes."</i>
 </p>
 
 <table width="100%" border="0" align="center">
 <tr>
 <td width="50%" align="center" style="padding: 14px;">
   <h4>📱 Native iOS Engineering</h4>
-  <p><b>SwiftUI · UIKit · Xcode</b><br /><sub>CoreLocation · MapKit · Clean Architecture</sub></p>
+  <p><b>SwiftUI · UIKit · Xcode</b><br /><sub>Core Location · MapKit · Clean Architecture</sub></p>
 </td>
 <td width="50%" align="center" style="padding: 14px;">
   <h4>🔗 Backend &amp; Integration</h4>
-  <p><b>Firebase · REST APIs · PHP · MySQL</b><br /><sub>Realtime DB · Push Notifications · AI Integration</sub></p>
+  <p><b>Firebase · REST APIs · PHP · MySQL</b><br /><sub>Realtime DB · Push Notifications · AI Chatbots</sub></p>
 </td>
 </tr>
 <tr>
@@ -79,8 +79,8 @@
   <p><b>Selenium · Appium · Postman</b><br /><sub>Load Testing · Security Vulnerability Testing</sub></p>
 </td>
 <td width="50%" align="center" style="padding: 14px;">
-  <h4>🎓 Education &amp; Training</h4>
-  <p><b>B.E. CSE @ SIMATS (2022–2026)</b><br /><sub>Technical Trainer &amp; Oracle AI Certified</sub></p>
+  <h4>👨‍🏫 Mentorship &amp; Education</h4>
+  <p><b>Technical Trainer @ SIMATS</b><br /><sub>B.E. CSE (CGPA 7.9) · Oracle AI Certified</sub></p>
 </td>
 </tr>
 </table>
@@ -93,7 +93,7 @@
 <tr>
 <td width="50%" align="left" style="padding: 18px; vertical-align: top;">
   <h3>🏥 Personal Fitness Trainer for Patient Recovery</h3>
-  <p>Native iOS healthcare platform built with <b>Swift &amp; SwiftUI</b> featuring appointment scheduling, secure doctor-patient consultations, REST API synchronization, and an in-app AI conversational assistant. Powered by a PHP/MySQL backend for real-time patient health records.</p>
+  <p>Developed a native healthcare iOS application utilizing <b>Swift, SwiftUI, and Xcode</b> for patient recovery and fitness management. Features appointment scheduling, doctor-patient consultation, REST API integration, and an in-app AI conversational assistant. Built with an intuitive UI and a <b>PHP/MySQL backend</b> for secure real-time health data synchronization.</p>
   <br />
   <p>
     <a href="https://github.com/lokeshkumar143" target="_blank">
@@ -103,7 +103,7 @@
 </td>
 <td width="50%" align="left" style="padding: 18px; vertical-align: top;">
   <h3>🩹 Smart Ulcer Predictor</h3>
-  <p>Intelligent iOS clinical diagnostic application leveraging deep learning models to assess and classify dermatological skin ulcers into <i>Healing</i>, <i>Not Healing</i>, or <i>Normal</i> stages with image capture pipelines and medical compliance disclaimers.</p>
+  <p>Architected an AI-powered medical diagnostic support tool that leverages advanced deep learning models to analyze skin ulcer imagery and provide instant classifications (<i>Healing</i>, <i>Not Healing</i>, or <i>Normal Skin</i>). Implemented an automated image-processing pipeline with medical compliance disclaimers for responsible healthcare assistance.</p>
   <br />
   <p>
     <a href="https://github.com/lokeshkumar143" target="_blank">
@@ -116,7 +116,17 @@
 
 ---
 
-<h2 align="center">🛠️ Tech Stack &amp; Skills</h2>
+<h2 align="center">🏙️ 3D Contribution Skyline</h2>
+
+<p align="center"><i>Automatically generated via GitHub Actions daily build workflow.</i></p>
+
+<p align="center">
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contribution Skyline" />
+</p>
+
+---
+
+<h2 align="center">🛠️ Technical Skills &amp; Stack</h2>
 
 <p align="center"><b>Mobile &amp; Programming Languages</b></p>
 <p align="center">
@@ -161,15 +171,17 @@
 
 <h2 align="center">⚡ Contribution Journey</h2>
 
+<p align="center"><i>Interactive snake eating my contribution matrix (powered by GitHub Actions).</i></p>
+
 <p align="center">
-  <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Snake Animation" />
+  <img src="https://raw.githubusercontent.com/lokeshkumar143/lokeshkumar143/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Snake Animation" />
 </p>
 
 ---
 
 <h2 align="center">📬 Let's Connect &amp; Collaborate</h2>
 
-<p align="center"><i>Whether you want to discuss iOS architecture, app ideas, mobile testing, or collaboration — my inbox is always open!</i></p>
+<p align="center"><i>Whether you want to discuss iOS architecture, Swift/SwiftUI apps, mobile testing, or tech mentorship — my inbox is always open!</i></p>
 
 <table border="0" align="center">
 <tr>
