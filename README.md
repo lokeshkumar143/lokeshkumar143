@@ -1,19 +1,6 @@
-<h1 align="center">Lokesh Kumar S</h1>
-
 <p align="center">
-  <b>Mobile Application Developer &middot; iOS (SwiftUI &amp; UIKit) &middot; Technical Trainer @ SIMATS</b>
+  <img src="assets/header.svg" width="100%" alt="Lokesh Kumar S — Futuristic Neural Command HUD" />
 </p>
-
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
-  <img src="assets/portrait-terminal.svg" width="100%" alt="Lokesh Kumar S — Live GitHub Avatar ASCII Portrait Terminal" />
-</td>
-<td width="50%" valign="top">
-  <img src="assets/terminal-identity.svg" width="100%" alt="Lokesh Kumar S — Live System Telemetry Terminal" />
-</td>
-</tr>
-</table>
 
 <p align="center">
   <a href="https://github.com/lokeshkumar143">
