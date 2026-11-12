@@ -1,220 +1,230 @@
 <p align="center">
-  <img src="assets/header.svg" width="100%" alt="Lokesh Kumar S Header" />
+  <img src="assets/header.svg" width="100%" alt="Lokesh Kumar S — Xcode &amp; iOS Simulator Hero" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/lokeshkumar143">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2800&pause=1000&color=EF4444&center=true&vCenter=true&multiline=false&width=650&height=42&lines=Hi%20there!%20I'm%20Lokesh%20Kumar%20S%20%F0%9F%91%8B;iOS%20Developer%20%7C%20SwiftUI%20%26%20UIKit%20%F0%9F%93%B1;Intern%20%E2%86%92%20Full-Time%20iOS%20Developer%20in%202%20Months%20%E2%9A%A1;Technical%20Trainer%20mentoring%20future%20devs%20%F0%9F%92%BB;Shipping%20clean%20code%2C%20one%20commit%20at%20a%20time%20%F0%9F%9A%80" width="100%" style="max-width: 650px;" alt="Typing SVG" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://linkedin.com/in/lokesh-kumar-s-16984a268/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-DC2626?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0a0a0a" alt="LinkedIn" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/lokeshkumar143" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-Follow-DC2626?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0a0a" alt="GitHub" />
+  <a href="https://linkedin.com/in/lokesh-kumar-s-16984a268/">
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A84FF?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D121C" alt="LinkedIn" />
   </a>
   &nbsp;
   <a href="mailto:lokeshkumar142005@gmail.com">
-    <img src="https://img.shields.io/badge/Email-Contact-DC2626?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a0a0a" alt="Email" />
+    <img src="https://img.shields.io/badge/Email-Hire_/_Collaborate-F05138?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D121C" alt="Email" />
   </a>
   &nbsp;
-  <a href="https://leetcode.com/lokeshkumar143" target="_blank">
-    <img src="https://img.shields.io/badge/LeetCode-Solve-DC2626?style=for-the-badge&logo=leetcode&logoColor=white&labelColor=0a0a0a" alt="LeetCode" />
+  <a href="https://leetcode.com/lokeshkumar143">
+    <img src="https://img.shields.io/badge/LeetCode-Problem_Solving-FFA116?style=for-the-badge&logo=leetcode&logoColor=white&labelColor=0D121C" alt="LeetCode" />
   </a>
+  &nbsp;
+  <a href="https://github.com/lokeshkumar143?tab=repositories">
+    <img src="https://img.shields.io/badge/Repositories-Explore_Code-30D158?style=for-the-badge&logo=github&logoColor=white&labelColor=0D121C" alt="Repositories" />
+  </a>
+  &nbsp;
+  <img src="https://komarev.com/ghpvc/?username=lokeshkumar143&label=VIEWS&color=F05138&style=for-the-badge&labelColor=0D121C" alt="Profile Views" />
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=lokeshkumar143&label=PROFILE%20VIEWS&color=dc2626&style=for-the-badge" alt="Profile Views" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Currently-iOS%20Developer%20@%20SIMATS-111111?style=for-the-badge&logo=apple&logoColor=EF4444" alt="Current Role" />
+  <sub>
+    <b>iOS Developer &amp; Technical Trainer @ SIMATS</b> &nbsp;&bull;&nbsp;
+    <b>Intern &rarr; Full-Time in 2 Months</b> &nbsp;&bull;&nbsp;
+    <b>App Store Shipper</b> &nbsp;&bull;&nbsp;
+    <b>Oracle AI Certified</b>
+  </sub>
 </p>
 
 ---
 
-<h2 align="center">🔴 Professional Summary</h2>
+<h2 align="center">Career Highlights &amp; Engineering DNA</h2>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=3000&pause=1000&color=F87171&center=true&vCenter=true&multiline=false&width=600&height=28&lines=Driven+by+curiosity.+Building+for+impact.+Coding+the+future." width="100%" style="max-width: 600px;" alt="Typing Quote" />
+  <img src="assets/career-bento.svg" width="100%" alt="Career Bento Grid — Velocity, Native iOS, 4-Layer QA, Technical Leadership" />
 </p>
 
-<p align="center">
-  <img src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="340" style="max-width: 100%; border-radius: 12px;" alt="Developer coding animation" />
-</p>
+<details>
+<summary><b>Recruiter Quick-Brief: Why teams hire &amp; promote me fast (30-second read)</b></summary>
+<br />
 
-<p align="center">
-  Hey! I'm <b>Lokesh Kumar S</b>, an <b>iOS Developer & Technical Trainer</b> based in India.<br />
-  Promoted from <b>Intern → Full-Time Developer in just two months</b> at SIMATS Engineering Institution. I own the full mobile application lifecycle end-to-end: architecting native <b>SwiftUI & UIKit</b> interfaces, integrating RESTful APIs, and shipping polished production apps live to the App Store.
-</p>
+- **Rapid Ownership (`Intern → Full-Time in 2 Months`):** Promoted early at **SIMATS Engineering Institution** after owning the full mobile lifecycle — UI/UX implementation, API integration, QA verification, and live **App Store** releases.
+- **Native iOS Craft:** Production experience across **Swift, SwiftUI, UIKit, Xcode, Core Location, MapKit**, and **Clean Architecture**.
+- **Full-Stack &amp; AI Fluency:** Connects native iOS clients seamlessly to **Firebase (Realtime DB &amp; Push Notifications)**, **RESTful APIs**, **PHP/MySQL**, and **deep-learning / conversational AI** pipelines.
+- **4-Discipline QA Mindset:** Doesn't just write features — validates apps across **Functional UI Automation (Appium, Selenium)**, **API Testing (Postman)**, **Load Testing**, and **Security Vulnerability Testing**.
+- **Force Multiplier &amp; Mentor:** Serves as a **Technical Trainer @ SIMATS**, mentoring emerging developers while holding a **B.E. in Computer Science (7.9 CGPA)** and **Oracle AI Certification**.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-🟢_Building_%26_Shipping-111111?style=flat-square" alt="Status" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Degree-B.E._Computer_Science-DC2626?style=flat-square" alt="Degree" />
-  &nbsp;
-  <img src="https://img.shields.io/badge/Specialization-iOS_Application_Engineering-111111?style=flat-square" alt="Specialization" />
-</p>
-
-<p align="center">
-  💬 <b>Core Competencies:</b> Native iOS Engineering, Cross-Functional Mentorship, App Store Deployments, and QA across 4 Testing Disciplines.<br />
-  ⚡ <b>Philosophy:</b> <i>"Ships fast, ships clean, and takes real ownership of outcomes."</i>
-</p>
-
-<table width="100%" border="0" align="center">
-<tr>
-<td width="50%" align="center" style="padding: 14px;">
-  <h4>📱 Native iOS Engineering</h4>
-  <p><b>SwiftUI · UIKit · Xcode</b><br /><sub>Core Location · MapKit · Clean Architecture</sub></p>
-</td>
-<td width="50%" align="center" style="padding: 14px;">
-  <h4>🔗 Backend &amp; Integration</h4>
-  <p><b>Firebase · REST APIs · PHP · MySQL</b><br /><sub>Realtime DB · Push Notifications · AI Chatbots</sub></p>
-</td>
-</tr>
-<tr>
-<td width="50%" align="center" style="padding: 14px;">
-  <h4>🧪 Quality Assurance &amp; Testing</h4>
-  <p><b>Selenium · Appium · Postman</b><br /><sub>Load Testing · Security Vulnerability Testing</sub></p>
-</td>
-<td width="50%" align="center" style="padding: 14px;">
-  <h4>👨‍🏫 Mentorship &amp; Education</h4>
-  <p><b>Technical Trainer @ SIMATS</b><br /><sub>B.E. CSE (CGPA 7.9) · Oracle AI Certified</sub></p>
-</td>
-</tr>
-</table>
+</details>
 
 ---
 
-<h2 align="center">🔴 Featured Projects Spotlight</h2>
+<h2 align="center">Featured Engineering Case Studies</h2>
 
-<table width="100%" border="0" align="center">
+<table width="100%">
 <tr>
-<td width="50%" align="left" style="padding: 18px; vertical-align: top;">
+<td width="50%" valign="top">
   <h3>🏥 Personal Fitness Trainer for Patient Recovery</h3>
-  <p>Developed a native healthcare iOS application utilizing <b>Swift, SwiftUI, and Xcode</b> for patient recovery and fitness management. Features appointment scheduling, doctor-patient consultation, REST API integration, and an in-app AI conversational assistant. Built with an intuitive UI and a <b>PHP/MySQL backend</b> for secure real-time health data synchronization.</p>
+  <p><b>Role:</b> End-to-End iOS Engineer &bull; <b>Stack:</b> <code>Swift</code> <code>SwiftUI</code> <code>Xcode</code> <code>PHP</code> <code>MySQL</code> <code>REST</code> <code>AI</code></p>
+  <p>Built a native healthcare recovery iOS application enabling patients and doctors to coordinate rehabilitation plans, appointments, and real-time progress tracking.</p>
+  <ul>
+    <li><b>Client Architecture:</b> Native <b>SwiftUI</b> views backed by structured <b>REST API</b> networking</li>
+    <li><b>Core Features:</b> Doctor-patient consultation flow, appointment scheduling, and an <b>in-app AI conversational assistant</b></li>
+    <li><b>Backend Sync:</b> Custom <b>PHP &amp; MySQL</b> backend ensuring reliable health-data persistence</li>
+  </ul>
+  <details>
+    <summary><b>Inspect Technical Highlights</b></summary>
+    <ul>
+      <li>Designed patient-friendly recovery workflows optimized for accessibility and daily check-ins.</li>
+      <li>Implemented bidirectional sync between Xcode/SwiftUI client state and relational MySQL tables via authenticated REST endpoints.</li>
+      <li>Embedded an AI assistant module to guide routine recovery queries between consultations.</li>
+    </ul>
+  </details>
   <br />
-  <p>
-    <a href="https://github.com/lokeshkumar143" target="_blank">
-      <img src="https://img.shields.io/badge/Codebase-💻%20View%20Repository-DC2626?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0a0a" alt="Codebase" />
-    </a>
-  </p>
+  <a href="https://github.com/lokeshkumar143?tab=repositories">
+    <img src="https://img.shields.io/badge/Explore_Projects-GitHub_Repos-F05138?style=for-the-badge&logo=github&logoColor=white&labelColor=0D121C" alt="Explore Personal Fitness Trainer Repositories" />
+  </a>
 </td>
-<td width="50%" align="left" style="padding: 18px; vertical-align: top;">
+<td width="50%" valign="top">
   <h3>🩹 Smart Ulcer Predictor</h3>
-  <p>Architected an AI-powered medical diagnostic support tool that leverages advanced deep learning models to analyze skin ulcer imagery and provide instant classifications (<i>Healing</i>, <i>Not Healing</i>, or <i>Normal Skin</i>). Implemented an automated image-processing pipeline with medical compliance disclaimers for responsible healthcare assistance.</p>
+  <p><b>Role:</b> Mobile &amp; AI Systems Architect &bull; <b>Stack:</b> <code>Deep Learning</code> <code>Computer Vision</code> <code>Image Pipeline</code></p>
+  <p>Architected an AI-powered diagnostic support system that analyzes skin ulcer imagery and classifies healing progression to assist clinical triage.</p>
+  <ul>
+    <li><b>3-Class Inference:</b> Automated classification into <i>Healing</i>, <i>Not Healing</i>, or <i>Normal Skin</i></li>
+    <li><b>Automated Pipeline:</b> Pre-processing, normalization, and fast inference workflow for mobile/clinical imagery</li>
+    <li><b>Responsible AI:</b> Built-in medical compliance disclaimers and clear decision-support guardrails</li>
+  </ul>
+  <details>
+    <summary><b>Inspect Technical Highlights</b></summary>
+    <ul>
+      <li>Standardized input image preprocessing to handle real-world lighting and framing variance before model inference.</li>
+      <li>Structured classification outputs for immediate visual interpretability alongside non-diagnostic safety notices.</li>
+      <li>Validated end-to-end latency and edge-case inputs to keep predictions reliable under field conditions.</li>
+    </ul>
+  </details>
   <br />
-  <p>
-    <a href="https://github.com/lokeshkumar143" target="_blank">
-      <img src="https://img.shields.io/badge/Codebase-💻%20View%20Repository-DC2626?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0a0a" alt="Codebase" />
-    </a>
-  </p>
+  <a href="https://github.com/lokeshkumar143?tab=repositories">
+    <img src="https://img.shields.io/badge/Explore_Projects-GitHub_Repos-0A84FF?style=for-the-badge&logo=github&logoColor=white&labelColor=0D121C" alt="Explore Smart Ulcer Predictor Repositories" />
+  </a>
 </td>
 </tr>
 </table>
 
 ---
 
-<h2 align="center">🏙️ 3D Contribution Skyline</h2>
+<h2 align="center">Engineering Stack &amp; 4-Layer QA Matrix</h2>
 
-<p align="center"><i>Automatically generated via GitHub Actions daily build workflow.</i></p>
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+  <p><b>Apple &amp; Mobile Ecosystem</b></p>
+  <ul>
+    <li><b>UI &amp; Frameworks:</b> <code>Swift</code>, <code>SwiftUI</code>, <code>UIKit</code>, <code>Xcode</code></li>
+    <li><b>Apple Services:</b> <code>Core Location</code>, <code>MapKit</code>, <code>Push Notifications</code></li>
+    <li><b>Patterns:</b> <code>Clean Architecture</code>, App Store Release Pipeline</li>
+  </ul>
+  <p><b>Backend, Cloud &amp; AI</b></p>
+  <ul>
+    <li><b>Cloud &amp; Data:</b> <code>Firebase Realtime DB</code>, <code>MySQL</code>, <code>PHP</code></li>
+    <li><b>Integrations:</b> <code>RESTful APIs</code>, <code>AI Chatbots</code>, <code>Deep Learning Pipelines</code></li>
+  </ul>
+</td>
+<td width="50%" valign="top">
+  <p><b>4-Layer Quality Assurance &amp; Security</b></p>
+  <ul>
+    <li><b>Mobile &amp; Web Automation:</b> <code>Appium</code>, <code>Selenium</code></li>
+    <li><b>API &amp; Contract Verification:</b> <code>Postman</code></li>
+    <li><b>Reliability &amp; Hardening:</b> <code>Load Testing</code>, <code>Security Vulnerability Testing</code></li>
+  </ul>
+  <p><b>Core Languages &amp; Tooling</b></p>
+  <ul>
+    <li><b>Languages:</b> <code>Swift</code>, <code>C++</code>, <code>Java</code>, <code>Python</code>, <code>PHP</code>, <code>JavaScript</code>, <code>HTML/CSS</code></li>
+    <li><b>Workflow:</b> <code>Git</code>, <code>GitHub Actions</code>, <code>Figma</code>, <code>Linux</code></li>
+  </ul>
+</td>
+</tr>
+</table>
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=swift,apple,firebase,mysql,php,py,cpp,java,js,react,tailwind&theme=dark" alt="Core Languages and Mobile Backend Stack" />
+  </a>
+  <br /><br />
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,github,postman,selenium,figma,linux&theme=dark" alt="Developer Tools and QA Stack" />
+  </a>
+</p>
+
+---
+
+<h2 align="center">3D Contribution Skyline &amp; Live Telemetry</h2>
+
+<p align="center">
+  <sub>Auto-built daily by GitHub Actions &mdash; zero downtime, directly committed to this repository.</sub>
+</p>
 
 <p align="center">
   <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contribution Skyline" />
 </p>
 
----
-
-<h2 align="center">🛠️ Technical Skills &amp; Stack</h2>
-
-<p align="center"><b>Mobile &amp; Programming Languages</b></p>
 <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=swift,cpp,java,py,php,js,html,css&theme=dark" width="100%" style="max-width: 460px;" alt="Languages" />
-  </a>
-</p>
-
-<p align="center"><b>Frameworks, Mobile &amp; Backend</b></p>
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=apple,firebase,mysql,react,tailwind&theme=dark" width="100%" style="max-width: 320px;" alt="Frameworks and Backend" />
-  </a>
-</p>
-
-<p align="center"><b>Developer Tools, Testing &amp; QA</b></p>
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,github,postman,selenium,figma,linux&theme=dark" width="100%" style="max-width: 380px;" alt="Tools and QA" />
-  </a>
-</p>
-
----
-
-<h2 align="center">📊 GitHub Analytics &amp; Activity</h2>
-
-<p align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=lokeshkumar143&show_icons=true&bg_color=0a0a0a&title_color=ef4444&text_color=f3f4f6&icon_color=ef4444&border_color=ef4444&border_radius=8" width="100%" style="max-width: 440px;" alt="GitHub Stats" />
-  &nbsp;&nbsp;
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=lokeshkumar143&layout=compact&bg_color=0a0a0a&title_color=ef4444&text_color=f3f4f6&border_color=ef4444&border_radius=8" width="100%" style="max-width: 350px;" alt="Top Languages" />
+  <img src="https://github-stats-extended.vercel.app/api?username=lokeshkumar143&show_icons=true&bg_color=0D121C&title_color=F05138&text_color=E2E8F0&icon_color=0A84FF&border_color=273142&border_radius=10" width="49%" alt="GitHub Stats" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=lokeshkumar143&layout=compact&bg_color=0D121C&title_color=F05138&text_color=E2E8F0&border_color=273142&border_radius=10" width="44%" alt="Top Languages" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=lokeshkumar143&theme=blood&hide_border=false&border=ef4444&background=0a0a0a&ring=ef4444&fire=ef4444&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=ef4444&sideLabels=ef4444&dates=999999" width="100%" style="max-width: 480px;" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com/?user=lokeshkumar143&hide_border=false&border=273142&background=0D121C&ring=F05138&fire=F05138&currStreakNum=F8FAFC&sideNums=F8FAFC&currStreakLabel=FF7A59&sideLabels=94A3B8&dates=64748B&border_radius=10" width="56%" alt="GitHub Contribution Streak" />
 </p>
 
+<details>
+<summary><b>Interactive Bonus: Watch the Contribution Snake Animation</b></summary>
+<br />
 <p align="center">
-  <img src="assets/quote.svg" width="100%" style="max-width: 720px;" alt="Code and Art Quote" />
+  <img src="https://raw.githubusercontent.com/lokeshkumar143/lokeshkumar143/output/github-contribution-grid-snake-dark.svg" width="100%" alt="GitHub Contribution Snake Animation" />
+</p>
+</details>
+
+<br />
+
+<p align="center">
+  <img src="assets/quote.svg" width="100%" alt="Engineering Philosophy Quote" />
 </p>
 
 ---
 
-<h2 align="center">⚡ Contribution Journey</h2>
-
-<p align="center"><i>Interactive snake eating my contribution matrix (powered by GitHub Actions).</i></p>
+<h2 align="center">Let's Build Something Meaningful</h2>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/lokeshkumar143/lokeshkumar143/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Snake Animation" />
+  Open to <b>iOS Engineer</b>, <b>Mobile App Developer</b>, and <b>Product Engineering</b> opportunities.<br />
+  If you're hiring or collaborating on Swift/SwiftUI apps, AI-enabled mobile products, or developer mentorship &mdash; let's talk.
 </p>
 
----
-
-<h2 align="center">📬 Let's Connect &amp; Collaborate</h2>
-
-<p align="center"><i>Whether you want to discuss iOS architecture, Swift/SwiftUI apps, mobile testing, or tech mentorship — my inbox is always open!</i></p>
-
-<table border="0" align="center">
+<table align="center">
 <tr>
-<td align="center" width="220" style="padding: 16px;">
-  <a href="https://linkedin.com/in/lokesh-kumar-s-16984a268/" target="_blank">
-    <img src="https://skillicons.dev/icons?i=linkedin" width="60" height="60" alt="LinkedIn" />
+<td align="center" width="210">
+  <a href="https://linkedin.com/in/lokesh-kumar-s-16984a268/">
+    <img src="https://skillicons.dev/icons?i=linkedin" width="52" height="52" alt="LinkedIn" />
     <br /><br />
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-DC2626?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0a0a0a" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-0A84FF?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0D121C" alt="Connect on LinkedIn" />
   </a>
   <br />
-  <sub><b>Professional Network</b></sub>
+  <sub><b>Career &amp; Networking</b></sub>
 </td>
-<td align="center" width="220" style="padding: 16px;">
-  <a href="https://github.com/lokeshkumar143" target="_blank">
-    <img src="https://skillicons.dev/icons?i=github" width="60" height="60" alt="GitHub" />
+<td align="center" width="210">
+  <a href="https://github.com/lokeshkumar143?tab=repositories">
+    <img src="https://skillicons.dev/icons?i=github" width="52" height="52" alt="GitHub" />
     <br /><br />
-    <img src="https://img.shields.io/badge/GitHub-Follow-DC2626?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0a0a" alt="GitHub" />
+    <img src="https://img.shields.io/badge/GitHub-Repositories-30D158?style=for-the-badge&logo=github&logoColor=white&labelColor=0D121C" alt="View Repositories" />
   </a>
   <br />
-  <sub><b>Open Source &amp; Projects</b></sub>
+  <sub><b>Code &amp; Open Source</b></sub>
 </td>
-<td align="center" width="220" style="padding: 16px;">
+<td align="center" width="210">
   <a href="mailto:lokeshkumar142005@gmail.com">
-    <img src="https://skillicons.dev/icons?i=gmail" width="60" height="60" alt="Gmail" />
+    <img src="https://skillicons.dev/icons?i=gmail" width="52" height="52" alt="Gmail" />
     <br /><br />
-    <img src="https://img.shields.io/badge/Email-Contact_Me-DC2626?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a0a0a" alt="Email" />
+    <img src="https://img.shields.io/badge/Email-Message_Me-F05138?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D121C" alt="Send Email" />
   </a>
   <br />
-  <sub><b>Direct Collaboration</b></sub>
+  <sub><b>lokeshkumar142005@gmail.com</b></sub>
 </td>
 </tr>
 </table>
 
 <p align="center">
-  <img src="assets/footer.svg" width="100%" alt="Footer" />
+  <img src="assets/footer.svg" width="100%" alt="Xcode Status Bar Footer" />
 </p>

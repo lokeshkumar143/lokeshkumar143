@@ -1,30 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 80" width="100%" height="80">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 76" width="100%" role="img" aria-label="Footer">
   <defs>
-    <linearGradient id="footer-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7f1d1d" stop-opacity="0" />
-      <stop offset="30%" stop-color="#ef4444" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#ff4d6d" stop-opacity="1" />
-      <stop offset="70%" stop-color="#ef4444" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#7f1d1d" stop-opacity="0" />
+    <linearGradient id="footer-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0A84FF" stop-opacity="0" />
+      <stop offset="30%" stop-color="#0A84FF" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#F05138" stop-opacity="0.95" />
+      <stop offset="70%" stop-color="#0A84FF" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0" />
     </linearGradient>
-    <filter id="f-glow">
-      <feGaussianBlur stdDeviation="4" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
+    <style>
+      .mono { font-family: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace; }
+    </style>
   </defs>
 
-  <!-- Glowing Neon Divider Line -->
-  <line x1="50" y1="20" x2="850" y2="20" stroke="url(#footer-grad)" stroke-width="2" filter="url(#f-glow)" />
+  <line x1="24" y1="12" x2="936" y2="12" stroke="url(#footer-line)" stroke-width="1.5" />
 
-  <!-- Center Diamond & Tech Mark -->
-  <polygon points="450,15 456,20 450,25 444,20" fill="#ff2a45" filter="url(#f-glow)" />
-  <circle cx="430" cy="20" r="2" fill="#ef4444" />
-  <circle cx="470" cy="20" r="2" fill="#ef4444" />
+  <rect x="8" y="24" width="944" height="44" rx="10" fill="#0D121C" stroke="#222B3B" stroke-width="1" />
 
-  <text x="450" y="52" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#64748b" letter-spacing="2">
-    CRAFTED WITH PASSION BY <tspan fill="#ef4444">LOKESH KUMAR S</tspan> &#8226; &#169; 2026
+  <circle cx="30" cy="46" r="4" fill="#30D158">
+    <animate attributeName="opacity" values="1;0.35;1" dur="2.2s" repeatCount="indefinite" />
+  </circle>
+  <text x="44" y="50" class="mono" font-size="11.5" font-weight="600" fill="#94A3B8">
+    <tspan fill="#6EE7B7">main</tspan> &#160;&#8226;&#160; SwiftUI &#183; UIKit &#183; Clean Architecture &#183; 4-Layer QA
+  </text>
+
+  <text x="932" y="50" text-anchor="end" class="mono" font-size="11.5" font-weight="600" fill="#64748B">
+    CRAFTED BY <tspan fill="#FF7A59">LOKESH KUMAR S</tspan> &#183; &#169; 2026
   </text>
 </svg>

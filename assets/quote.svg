@@ -1,43 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 120" width="100%" height="120">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 130" width="100%" role="img" aria-label="Engineering Philosophy">
   <defs>
     <linearGradient id="q-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#09090b" />
-      <stop offset="50%" stop-color="#120608" />
-      <stop offset="100%" stop-color="#070709" />
+      <stop offset="0%" stop-color="#0B0F17" />
+      <stop offset="100%" stop-color="#131926" />
     </linearGradient>
     <linearGradient id="q-border" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7f1d1d" />
-      <stop offset="50%" stop-color="#ef4444" />
-      <stop offset="100%" stop-color="#7f1d1d" />
+      <stop offset="0%" stop-color="#273142" />
+      <stop offset="50%" stop-color="#F05138" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#0A84FF" stop-opacity="0.6" />
     </linearGradient>
-    <filter id="q-glow">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif; }
+      .mono { font-family: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace; }
+    </style>
   </defs>
 
-  <!-- Card Background -->
-  <rect width="820" height="120" rx="10" fill="url(#q-bg)" stroke="url(#q-border)" stroke-width="1.2" />
+  <rect x="4" y="4" width="872" height="122" rx="12" fill="url(#q-bg)" stroke="url(#q-border)" stroke-width="1.3" />
+  <rect x="4" y="24" width="4" height="82" rx="2" fill="#F05138" />
 
-  <!-- Corner Cyber Accents -->
-  <path d="M 8 20 L 8 8 L 20 8" stroke="#ff2a45" stroke-width="2.5" fill="none" stroke-linecap="round" />
-  <path d="M 812 20 L 812 8 L 800 8" stroke="#ff2a45" stroke-width="2.5" fill="none" stroke-linecap="round" />
-  <path d="M 8 100 L 8 112 L 20 112" stroke="#ff2a45" stroke-width="2.5" fill="none" stroke-linecap="round" />
-  <path d="M 812 100 L 812 112 L 800 112" stroke="#ff2a45" stroke-width="2.5" fill="none" stroke-linecap="round" />
+  <text x="34" y="34" class="mono" font-size="11" font-weight="700" fill="#F05138" letter-spacing="1.2">// ENGINEERING PHILOSOPHY</text>
 
-  <!-- Big Quote Mark -->
-  <text x="32" y="56" font-family="Georgia, serif" font-size="44" font-weight="bold" fill="#ff2a45" opacity="0.9" filter="url(#q-glow)">&#8220;</text>
-
-  <!-- Quote Text Line 1 -->
-  <text x="64" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-style="italic" font-weight="500" fill="#f1f5f9">
-    &#8220;Code is the modern canvas where logic and art collide &#8212; sculpting ideas into living digital reality.&#8221;
+  <text x="34" y="64" class="sans" font-size="16" font-weight="500" fill="#F1F5F9">
+    &#8220;Ships fast, ships clean, and takes real ownership of outcomes &#8212;
+  </text>
+  <text x="34" y="88" class="sans" font-size="16" font-weight="500" fill="#E2E8F0">
+    sculpting thoughtful architecture into living mobile experiences.&#8221;
   </text>
 
-  <!-- Attribution Line -->
-  <text x="760" y="88" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#ef4444" letter-spacing="1">
-    &#8212; The Art of Programming
+  <text x="846" y="108" text-anchor="end" class="mono" font-size="12" font-weight="600" fill="#94A3B8">
+    &#8212; <tspan fill="#FF7A59">Lokesh Kumar S</tspan>
   </text>
 </svg>
