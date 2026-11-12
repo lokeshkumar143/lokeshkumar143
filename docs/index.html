@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lokesh Kumar S — Live 3D/2D GitHub Universe &amp; iOS Portfolio</title>
+  <style>
+    :root {
+      --bg: #03060e;
+      --panel: rgba(8, 15, 30, 0.84);
+      --border: rgba(56, 189, 248, 0.25);
+      --cyan: #00f5d4;
+      --blue: #38bdf8;
+      --pink: #ff2e63;
+      --purple: #a855f7;
+      --swift: #f05138;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --mono: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
+      --sans: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      background: radial-gradient(circle at 20% 10%, #09152b 0%, var(--bg) 55%, #02040a 100%);
+      color: var(--text);
+      font-family: var(--sans);
+    }
+
+    .hud-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 20px;
+      background: rgba(3, 6, 14, 0.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid var(--cyan);
+      object-fit: cover;
+    }
+
+    .brand-title {
+      font-weight: 800;
+      font-size: 1rem;
+      letter-spacing: 0.04em;
+    }
+
+    .brand-sub {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--cyan);
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn {
+      appearance: none;
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: rgba(15, 23, 42, 0.85);
+      color: var(--text);
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 8px 14px;
+      border-radius: 999px;
+      transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn:hover, .btn:focus-visible {
+      border-color: var(--cyan);
+      outline: none;
+    }
+
+    .btn.active {
+      background: linear-gradient(135deg, rgba(0, 245, 212, 0.2), rgba(56, 189, 248, 0.2));
+      border-color: var(--cyan);
+      color: var(--cyan);
+    }
+
+    .btn-accent {
+      border-color: rgba(255, 46, 99, 0.6);
+      color: #fda4af;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(0, 245, 212, 0.08);
+      border: 1px solid rgba(0, 245, 212, 0.35);
+      color: var(--cyan);
+    }
+
+    .pulse-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--cyan);
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .pulse-dot {
+        animation: pulseOpacity 1.8s ease-in-out infinite;
+      }
+      body.motion-paused .pulse-dot {
+        animation-play-state: paused;
+      }
+    }
+
+    @keyframes pulseOpacity {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    /* 3D View Stage */
+    #view-3d {
+      position: relative;
+      width: 100%;
+      height: calc(100vh - 68px);
+      min-height: 540px;
+      overflow: hidden;
+    }
+
+    #universe-canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      cursor: grab;
+      touch-action: none;
+    }
+
+    #universe-canvas:active {
+      cursor: grabbing;
+    }
+
+    .overlay-card {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      max-width: 360px;
+      padding: 16px 18px;
+      border-radius: 14px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+      pointer-events: auto;
+    }
+
+    .overlay-card h1 {
+      margin: 0 0 6px;
+      font-size: 1.25rem;
+      letter-spacing: 0.02em;
+    }
+
+    .overlay-card p {
+      margin: 0 0 10px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .metric-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-family: var(--mono);
+      font-size: 0.72rem;
+    }
+
+    .metric-chip {
+      padding: 4px 9px;
+      border-radius: 6px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.25);
+    }
+
+    .dock-bar {
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 10px 12px;
+      border-radius: 14px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    .dock-chip {
+      flex: 0 0 auto;
+      cursor: pointer;
+      border: 1px solid rgba(148, 163, 184, 0.28);
+      background: rgba(15, 23, 42, 0.9);
+      color: var(--text);
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      padding: 6px 11px;
+      border-radius: 8px;
+      transition: border-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .dock-chip:hover, .dock-chip:focus-visible {
+      border-color: var(--cyan);
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .tooltip {
+      position: absolute;
+      pointer-events: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: rgba(3, 7, 18, 0.94);
+      border: 1px solid var(--cyan);
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--text);
+      transform: translate(12px, -50%);
+      white-space: nowrap;
+      z-index: 10;
+    }
+
+    /* 2D Blueprint View */
+    #view-2d {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 24px 20px 64px;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .section-title {
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin: 28px 0 14px;
+    }
+
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 14px;
+    }
+
+    .hud-box {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .hud-box h3 {
+      margin: 6px 0 8px;
+      font-size: 1.05rem;
+    }
+
+    .hud-box p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+
+    .tag {
+      display: inline-block;
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: rgba(0, 245, 212, 0.12);
+      color: var(--cyan);
+      border: 1px solid rgba(0, 245, 212, 0.3);
+    }
+
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .search-input {
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-family: var(--mono);
+      font-size: 0.82rem;
+      padding: 8px 14px;
+      border-radius: 999px;
+      min-width: 240px;
+    }
+
+    .search-input:focus {
+      outline: 2px solid var(--cyan);
+      border-color: transparent;
+    }
+
+    .repo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 14px;
+    }
+
+    .repo-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 10px;
+      background: rgba(8, 15, 30, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      border-radius: 12px;
+      padding: 16px;
+      cursor: pointer;
+      text-align: left;
+      color: inherit;
+      transition: border-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .repo-card:hover, .repo-card:focus-visible {
+      border-color: var(--cyan);
+      transform: translateY(-2px);
+      outline: none;
+    }
+
+    .repo-name {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--text);
+      word-break: break-word;
+    }
+
+    .repo-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--muted);
+    }
+
+    .events-list {
+      display: grid;
+      gap: 8px;
+      font-family: var(--mono);
+      font-size: 0.8rem;
+    }
+
+    .event-row {
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: rgba(8, 15, 30, 0.8);
+      border: 1px solid rgba(56, 189, 248, 0.16);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    /* Native Modal Dialog following Modern Web Guidance */
+    dialog {
+      max-width: 520px;
+      width: calc(100% - 32px);
+      border: 1px solid var(--cyan);
+      border-radius: 16px;
+      background: #070e1c;
+      color: var(--text);
+      padding: 22px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75);
+    }
+
+    dialog:modal {
+      overscroll-behavior: contain;
+    }
+
+    dialog::backdrop {
+      background: rgba(2, 5, 13, 0.75);
+      backdrop-filter: blur(6px);
+      overflow: hidden;
+      overscroll-behavior: contain;
+    }
+
+    .dlg-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .dlg-title {
+      margin: 0;
+      font-size: 1.2rem;
+      word-break: break-word;
+    }
+
+    .dlg-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    a.btn {
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="hud-header">
+    <div class="brand">
+      <img id="gh-avatar" class="avatar" src="https://avatars.githubusercontent.com/u/129879377?v=4" alt="Lokesh Kumar S avatar" />
+      <div>
+        <div class="brand-title" id="gh-name">Lokesh Kumar .S</div>
+        <div class="brand-sub" id="gh-sub">@lokeshkumar143 // iOS &amp; AI Architect</div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <span class="status-pill">
+        <span class="pulse-dot"></span>
+        <span id="live-status">SYNCING LIVE GITHUB...</span>
+      </span>
+      <button id="btn-3d" class="btn active" type="button">3D Universe</button>
+      <button id="btn-2d" class="btn" type="button">2D Blueprint</button>
+      <button id="motion-toggle" class="btn btn-accent" type="button">Pause Motion</button>
+      <a class="btn" href="https://github.com/lokeshkumar143" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+    </div>
+  </header>
+
+  <!-- 3D HOLOGRAPHIC UNIVERSE -->
+  <main id="view-3d">
+    <canvas id="universe-canvas" aria-label="Interactive 3D holographic universe of Lokesh Kumar S GitHub repositories"></canvas>
+
+    <section class="overlay-card" aria-label="Live GitHub Summary">
+      <h1>LK.OS // 3D Live Universe</h1>
+      <p>Drag to orbit in 3D, scroll to zoom, and click any glowing repository node to inspect live GitHub telemetry.</p>
+      <div class="metric-row" id="hero-metrics"></div>
+    </section>
+
+    <div id="hover-tooltip" class="tooltip hidden"></div>
+
+    <nav class="dock-bar" id="repo-dock" aria-label="Quick-select repositories in 3D view"></nav>
+  </main>
+
+  <!-- 2D CYBERNETIC BLUEPRINT PORTFOLIO -->
+  <section id="view-2d" class="hidden" aria-label="2D Cybernetic Blueprint Portfolio">
+    <div class="section-title">01 // Career Telemetry &amp; Engineering DNA</div>
+    <div class="bento-grid">
+      <article class="hud-box">
+        <span class="tag">HYPER-VELOCITY</span>
+        <h3>Intern &rarr; Full-Time in 2 Months</h3>
+        <p>Rapidly promoted at SIMATS Engineering Institution after owning end-to-end iOS UI, REST integration, QA, and App Store deployments.</p>
+      </article>
+      <article class="hud-box">
+        <span class="tag">NATIVE APPLE CORE</span>
+        <h3>Swift &middot; SwiftUI &middot; UIKit &middot; Xcode</h3>
+        <p>Production iOS apps using Core Location, MapKit, Clean Architecture, Firebase Realtime DB, Push Notifications, and PHP/MySQL.</p>
+      </article>
+      <article class="hud-box">
+        <span class="tag">4-LAYER QA SHIELD</span>
+        <h3>Automation, API, Load &amp; Security</h3>
+        <p>Hands-on testing across Appium, Selenium, Postman API verification, high-concurrency load testing, and security vulnerability checks.</p>
+      </article>
+      <article class="hud-box">
+        <span class="tag">TRAINER &amp; ORACLE AI</span>
+        <h3>Technical Trainer @ SIMATS</h3>
+        <p>Mentoring emerging developers while holding a B.E. CSE (7.9 CGPA) and Oracle AI Certification, building AI healthcare solutions.</p>
+      </article>
+    </div>
+
+    <div class="section-title">02 // Flagship Case Studies</div>
+    <div class="bento-grid">
+      <article class="hud-box">
+        <span class="tag">LIVE REPO: RecovFit.ios (Swift)</span>
+        <h3>Personal Fitness Trainer for Patient Recovery</h3>
+        <p>Native healthcare iOS app featuring doctor-patient consultation scheduling, REST API integration, PHP/MySQL sync, and an in-app AI conversational assistant.</p>
+      </article>
+      <article class="hud-box">
+        <span class="tag">AI DIAGNOSTIC PIPELINE</span>
+        <h3>Smart Ulcer Predictor</h3>
+        <p>Deep-learning clinical imaging tool classifying skin ulcer imagery (Healing, Not Healing, Normal Skin) with automated preprocessing and medical compliance guardrails.</p>
+      </article>
+    </div>
+
+    <div class="section-title">03 // Live GitHub Repositories (<span id="repo-count">22</span>)</div>
+    <div class="filter-bar">
+      <div class="controls" id="lang-filters">
+        <button class="btn active" type="button" data-filter="ALL">All</button>
+        <button class="btn" type="button" data-filter="Swift">Swift / iOS</button>
+        <button class="btn" type="button" data-filter="Web">JS / TS</button>
+        <button class="btn" type="button" data-filter="Core">AI / CS Labs</button>
+      </div>
+      <input id="repo-search" class="search-input" type="search" placeholder="Search repositories..." aria-label="Search repositories" />
+    </div>
+    <div class="repo-grid" id="repo-grid"></div>
+
+    <div class="section-title">04 // Live Public GitHub Activity Stream</div>
+    <div class="events-list" id="events-list"></div>
+  </section>
+
+  <!-- Native Modal Dialog for Inspecting Any Repo -->
+  <dialog id="repo-dialog" aria-labelledby="dlg-title" closedby="any">
+    <div class="dlg-header">
+      <div>
+        <span class="tag" id="dlg-lang">Swift</span>
+        <h2 class="dlg-title" id="dlg-title">Repository</h2>
+      </div>
+      <form method="dialog">
+        <button class="btn" value="close" aria-label="Close dialog">&times;</button>
+      </form>
+    </div>
+    <p id="dlg-desc" style="color: var(--muted); line-height: 1.5; margin: 0 0 12px;"></p>
+    <div class="metric-row" id="dlg-metrics"></div>
+    <div class="dlg-actions">
+      <form method="dialog">
+        <button class="btn" value="cancel" autofocus>Close</button>
+      </form>
+      <a id="dlg-link" class="btn active" href="https://github.com/lokeshkumar143" target="_blank" rel="noopener noreferrer">Open on GitHub &rarr;</a>
+    </div>
+  </dialog>
+
+  <script>
+    const USERNAME = "lokeshkumar143";
+
+    const FALLBACK_USER = {
+      login: "lokeshkumar143",
+      name: "Lokesh Kumar .S",
+      avatar_url: "https://avatars.githubusercontent.com/u/129879377?v=4",
+      html_url: "https://github.com/lokeshkumar143",
+      public_repos: 22,
+      followers: 1,
+      following: 1
+    };
+
+    const FALLBACK_REPOS = [
+      { name: "RecovFit.ios", html_url: "https://github.com/lokeshkumar143/RecovFit.ios", language: "Swift", stargazers_count: 0, forks_count: 0, size: 23438, updated_at: "2025-11-12T03:19:01Z", description: "Native SwiftUI Patient Recovery & Personal Fitness iOS Application", fork: false },
+      { name: "Portfolio", html_url: "https://github.com/lokeshkumar143/Portfolio", language: "JavaScript", stargazers_count: 0, forks_count: 0, size: 131925, updated_at: "2026-11-05T09:15:34Z", description: "Interactive developer portfolio project", fork: false },
+      { name: "Result", html_url: "https://github.com/lokeshkumar143/Result", language: "TypeScript", stargazers_count: 0, forks_count: 0, size: 139, updated_at: "2026-04-23T13:27:32Z", description: "TypeScript academic result & analytics platform", fork: false },
+      { name: "teddy_bear", html_url: "https://github.com/lokeshkumar143/teddy_bear", language: "JavaScript", stargazers_count: 0, forks_count: 0, size: 17070, updated_at: "2026-11-09T14:37:30Z", description: "Interactive JavaScript web project", fork: false },
+      { name: "Testing-Class", html_url: "https://github.com/lokeshkumar143/Testing-Class", language: null, stargazers_count: 0, forks_count: 0, size: 0, updated_at: "2026-06-13T07:08:29Z", description: "QA & Testing training workspace", fork: false },
+      { name: "lokeshkumar143", html_url: "https://github.com/lokeshkumar143/lokeshkumar143", language: null, stargazers_count: 0, forks_count: 0, size: 105, updated_at: "2026-11-12T14:36:32Z", description: "Live 3D/2D GitHub Profile Universe", fork: false },
+      { name: "Resume-", html_url: "https://github.com/lokeshkumar143/Resume-", language: null, stargazers_count: 0, forks_count: 0, size: 2, updated_at: "2025-07-12T09:16:29Z", description: "Career resume repository", fork: false },
+      { name: "DWDM---CSA1678", html_url: "https://github.com/lokeshkumar143/DWDM---CSA1678", language: "R", stargazers_count: 0, forks_count: 0, size: 3696, updated_at: "2024-09-13T03:54:28Z", description: "Data Warehousing & Data Mining in R", fork: false },
+      { name: "Lokesh-kumar-.S-192210378-CSA1506-Cloud-Computing-and-Bigdata-Analytics", html_url: "https://github.com/lokeshkumar143/Lokesh-kumar-.S-192210378-CSA1506-Cloud-Computing-and-Bigdata-Analytics", language: null, stargazers_count: 0, forks_count: 0, size: 0, updated_at: "2024-11-08T02:54:46Z", description: "Cloud Computing & Big Data Analytics", fork: false },
+      { name: "TOC_lab_192210378-lokesh-kumar-.S", html_url: "https://github.com/lokeshkumar143/TOC_lab_192210378-lokesh-kumar-.S", language: null, stargazers_count: 0, forks_count: 0, size: 1353, updated_at: "2024-06-17T07:07:47Z", description: "Theory of Computation lab", fork: false },
+      { name: "CSAn1242-computer-architecture", html_url: "https://github.com/lokeshkumar143/CSAn1242-computer-architecture", language: null, stargazers_count: 0, forks_count: 0, size: 314, updated_at: "2024-04-07T17:07:52Z", description: "Computer Architecture coursework", fork: false },
+      { name: "Compiler-Design", html_url: "https://github.com/lokeshkumar143/Compiler-Design", language: null, stargazers_count: 0, forks_count: 0, size: 381, updated_at: "2024-03-18T06:45:29Z", description: "Compiler Design implementations", fork: false },
+      { name: "slot-D-Cpp-program", html_url: "https://github.com/lokeshkumar143/slot-D-Cpp-program", language: null, stargazers_count: 0, forks_count: 0, size: 4015, updated_at: "2023-10-30T02:52:37Z", description: "C++ systems programming", fork: false },
+      { name: "CSA1701-Artificial-intelligence", html_url: "https://github.com/lokeshkumar143/CSA1701-Artificial-intelligence", language: null, stargazers_count: 0, forks_count: 0, size: 2, updated_at: "2023-04-28T07:33:26Z", description: "Artificial Intelligence coursework", fork: false },
+      { name: "CSA0880-PYTHON", html_url: "https://github.com/lokeshkumar143/CSA0880-PYTHON", language: null, stargazers_count: 0, forks_count: 0, size: 1421, updated_at: "2023-04-05T15:50:28Z", description: "Python fundamentals & algorithms", fork: false }
+    ];
+
+    const LANG_COLORS = {
+      Swift: "#f05138",
+      JavaScript: "#facc15",
+      TypeScript: "#38bdf8",
+      R: "#a855f7",
+      Python: "#34d399"
+    };
+
+    let state = {
+      user: FALLBACK_USER,
+      repos: FALLBACK_REPOS,
+      events: [],
+      mode: "3d",
+      filter: "ALL",
+      query: "",
+      motionRunning: !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    };
+
+    // Elements
+    const view3d = document.getElementById("view-3d");
+    const view2d = document.getElementById("view-2d");
+    const btn3d = document.getElementById("btn-3d");
+    const btn2d = document.getElementById("btn-2d");
+    const motionToggle = document.getElementById("motion-toggle");
+    const repoDialog = document.getElementById("repo-dialog");
+    const tooltipEl = document.getElementById("hover-tooltip");
+
+    // Progressive fallback for dialog closedby="any" where unsupported (Safari)
+    if (!("closedBy" in HTMLDialogElement.prototype)) {
+      const outside = (e, dialog) => {
+        const r = dialog.getBoundingClientRect();
+        return e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom;
+      };
+      let pressedOutside = false;
+      repoDialog.addEventListener("pointerdown", (e) => { pressedOutside = outside(e, repoDialog); });
+      repoDialog.addEventListener("pointerup", (e) => { if (pressedOutside && outside(e, repoDialog)) repoDialog.close(); });
+    }
+    repoDialog.addEventListener("close", () => { repoDialog.returnValue = ""; });
+
+    function openRepoDialog(repo) {
+      const lang = repo.language || "Systems / Core";
+      document.getElementById("dlg-lang").textContent = lang;
+      document.getElementById("dlg-title").textContent = repo.name;
+      document.getElementById("dlg-desc").textContent = repo.description || "Production or academic repository in @" + USERNAME + "'s GitHub universe.";
+      document.getElementById("dlg-link").href = repo.html_url;
+
+      const metrics = document.getElementById("dlg-metrics");
+      metrics.textContent = "";
+      const items = [
+        "Language: " + lang,
+        "Size: " + (repo.size || 0) + " KB",
+        "Stars: " + (repo.stargazers_count || 0),
+        "Updated: " + (repo.updated_at || "").slice(0, 10)
+      ];
+      for (const txt of items) {
+        const span = document.createElement("span");
+        span.className = "metric-chip";
+        span.textContent = txt;
+        metrics.appendChild(span);
+      }
+      repoDialog.showModal();
+    }
+
+    function updateMotionLabel() {
+      motionToggle.textContent = state.motionRunning ? "Pause Motion" : "Play Motion";
+      document.body.classList.toggle("motion-paused", !state.motionRunning);
+    }
+    updateMotionLabel();
+
+    motionToggle.addEventListener("click", () => {
+      state.motionRunning = !state.motionRunning;
+      updateMotionLabel();
+    });
+
+    function switchMode(mode) {
+      state.mode = mode;
+      if (mode === "3d") {
+        view3d.classList.remove("hidden");
+        view2d.classList.add("hidden");
+        btn3d.classList.add("active");
+        btn2d.classList.remove("active");
+        resizeCanvas();
+      } else {
+        view3d.classList.add("hidden");
+        view2d.classList.remove("hidden");
+        btn2d.classList.add("active");
+        btn3d.classList.remove("active");
+      }
+    }
+
+    btn3d.addEventListener("click", () => switchMode("3d"));
+    btn2d.addEventListener("click", () => switchMode("2d"));
+
+    function renderProfileUI() {
+      const u = state.user;
+      document.getElementById("gh-name").textContent = u.name || u.login;
+      if (u.avatar_url) document.getElementById("gh-avatar").src = u.avatar_url;
+
+      const heroMetrics = document.getElementById("hero-metrics");
+      heroMetrics.textContent = "";
+      const chips = [
+        "Public Repos: " + (u.public_repos ?? state.repos.length),
+        "Followers: " + (u.followers ?? 0),
+        "Swift / iOS Flagship: RecovFit.ios"
+      ];
+      for (const text of chips) {
+        const s = document.createElement("span");
+        s.className = "metric-chip";
+        s.textContent = text;
+        heroMetrics.appendChild(s);
+      }
+
+      // Quick dock in 3D view
+      const dock = document.getElementById("repo-dock");
+      dock.textContent = "";
+      for (const repo of state.repos.slice(0, 12)) {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "dock-chip";
+        btn.textContent = repo.name + (repo.language ? " [" + repo.language + "]" : "");
+        btn.addEventListener("click", () => openRepoDialog(repo));
+        dock.appendChild(btn);
+      }
+
+      document.getElementById("repo-count").textContent = String(state.repos.length);
+      renderRepoGrid();
+      renderEvents();
+    }
+
+    function renderRepoGrid() {
+      const grid = document.getElementById("repo-grid");
+      grid.textContent = "";
+      const q = state.query.trim().toLowerCase();
+
+      const filtered = state.repos.filter((r) => {
+        if (q && !r.name.toLowerCase().includes(q) && !(r.language || "").toLowerCase().includes(q)) {
+          return false;
+        }
+        if (state.filter === "Swift") return r.language === "Swift";
+        if (state.filter === "Web") return r.language === "JavaScript" || r.language === "TypeScript";
+        if (state.filter === "Core") return !r.language || (r.language !== "Swift" && r.language !== "JavaScript" && r.language !== "TypeScript");
+        return true;
+      });
+
+      for (const repo of filtered) {
+        const card = document.createElement("button");
+        card.type = "button";
+        card.className = "repo-card";
+
+        const top = document.createElement("div");
+        const tag = document.createElement("span");
+        tag.className = "tag";
+        tag.textContent = repo.language || "Systems / Lab";
+        const title = document.createElement("div");
+        title.className = "repo-name";
+        title.style.marginTop = "8px";
+        title.textContent = repo.name;
+        top.append(tag, title);
+
+        if (repo.description) {
+          const desc = document.createElement("p");
+          desc.style.margin = "6px 0 0";
+          desc.style.color = "var(--muted)";
+          desc.style.fontSize = "0.84rem";
+          desc.textContent = repo.description;
+          top.appendChild(desc);
+        }
+
+        const meta = document.createElement("div");
+        meta.className = "repo-meta";
+        const d = document.createElement("span");
+        d.textContent = "Updated " + (repo.updated_at || "").slice(0, 10);
+        const sz = document.createElement("span");
+        sz.textContent = (repo.size || 0) + " KB";
+        const st = document.createElement("span");
+        st.textContent = "Stars " + (repo.stargazers_count || 0);
+        meta.append(d, sz, st);
+
+        card.append(top, meta);
+        card.addEventListener("click", () => openRepoDialog(repo));
+        grid.appendChild(card);
+      }
+    }
+
+    function renderEvents() {
+      const list = document.getElementById("events-list");
+      list.textContent = "";
+      if (!state.events.length) {
+        const row = document.createElement("div");
+        row.className = "event-row";
+        row.textContent = "Live event stream ready — connect online to stream recent GitHub commits and pushes.";
+        list.appendChild(row);
+        return;
+      }
+      for (const ev of state.events.slice(0, 8)) {
+        const row = document.createElement("div");
+        row.className = "event-row";
+        const left = document.createElement("span");
+        left.textContent = ev.type.replace("Event", "") + " -> " + (ev.repo ? ev.repo.name : USERNAME);
+        const right = document.createElement("span");
+        right.style.color = "var(--cyan)";
+        right.textContent = (ev.created_at || "").slice(0, 16).replace("T", " ");
+        row.append(left, right);
+        list.appendChild(row);
+      }
+    }
+
+    document.getElementById("lang-filters").addEventListener("click", (e) => {
+      const btn = e.target.closest("button[data-filter]");
+      if (!btn) return;
+      state.filter = btn.dataset.filter;
+      for (const b of document.querySelectorAll("#lang-filters button")) {
+        b.classList.toggle("active", b === btn);
+      }
+      renderRepoGrid();
+    });
+
+    document.getElementById("repo-search").addEventListener("input", (e) => {
+      state.query = e.target.value;
+      renderRepoGrid();
+    });
+
+    // Fetch Live GitHub Data
+    async function syncLiveGitHub() {
+      const statusEl = document.getElementById("live-status");
+      try {
+        const [uRes, rRes, eRes] = await Promise.all([
+          fetch("https://api.github.com/users/" + USERNAME),
+          fetch("https://api.github.com/users/" + USERNAME + "/repos?sort=updated&per_page=100"),
+          fetch("https://api.github.com/users/" + USERNAME + "/events/public?per_page=12")
+        ]);
+        if (!uRes.ok || !rRes.ok) throw new Error("GitHub API status " + uRes.status);
+        state.user = await uRes.json();
+        state.repos = await rRes.json();
+        if (eRes.ok) state.events = await eRes.json();
+        statusEl.textContent = "LIVE GITHUB SYNCED (" + state.repos.length + " REPOS)";
+        build3DNodes();
+        renderProfileUI();
+      } catch (err) {
+        statusEl.textContent = "CACHED SNAPSHOT (" + state.repos.length + " REPOS)";
+      }
+    }
+
+    // 3D Holographic Projection Engine (Zero-dependency 3D Canvas)
+    const canvas = document.getElementById("universe-canvas");
+    const ctx = canvas.getContext("2d");
+    let width = 0, height = 0, dpr = 1;
+    let yaw = 0.4, pitch = 0.32, zoom = 1.0;
+    let dragging = false, moved = false, lastX = 0, lastY = 0;
+    let hoveredNode = null;
+    let nodes3D = [];
+    let stars3D = [];
+
+    for (let i = 0; i < 160; i++) {
+      stars3D.push({
+        x: (Math.random() - 0.5) * 1400,
+        y: (Math.random() - 0.5) * 1000,
+        z: (Math.random() - 0.5) * 1400,
+        r: Math.random() * 1.6 + 0.4
+      });
+    }
+
+    function build3DNodes() {
+      nodes3D = state.repos.map((repo, idx) => {
+        const ring = idx < 6 ? 190 : idx < 14 ? 300 : 410;
+        const angle = (idx * 2.39996) + (idx % 3) * 0.4;
+        const elev = ((idx % 5) - 2) * 55;
+        return {
+          repo,
+          x: Math.cos(angle) * ring,
+          y: elev,
+          z: Math.sin(angle) * ring,
+          radius: repo.language === "Swift" ? 16 : repo.language ? 12 : 9,
+          color: LANG_COLORS[repo.language] || (idx % 2 === 0 ? "#00f5d4" : "#a855f7"),
+          screenX: 0,
+          screenY: 0,
+          screenR: 0
+        };
+      });
+    }
+
+    function resizeCanvas() {
+      const rect = view3d.getBoundingClientRect();
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      width = rect.width || window.innerWidth;
+      height = rect.height || window.innerHeight - 68;
+      canvas.width = width * dpr;
+      canvas.height = height * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+
+    function project(x, y, z) {
+      const cy = Math.cos(yaw), sy = Math.sin(yaw);
+      const cp = Math.cos(pitch), sp = Math.sin(pitch);
+
+      const x1 = x * cy - z * sy;
+      const z1 = x * sy + z * cy;
+      const y2 = y * cp - z1 * sp;
+      const z2 = y * sp + z1 * cp;
+
+      const fov = 720 * zoom;
+      const dist = fov + z2 + 420;
+      if (dist <= 40) return null;
+      const scale = fov / dist;
+      return {
+        sx: width / 2 + x1 * scale,
+        sy: height / 2 + y2 * scale,
+        scale,
+        depth: z2
+      };
+    }
+
+    function drawFrame() {
+      if (state.mode === "3d") {
+        if (state.motionRunning && !dragging) {
+          yaw += 0.0028;
+        }
+        ctx.clearRect(0, 0, width, height);
+
+        // Starfield
+        for (const s of stars3D) {
+          const p = project(s.x, s.y, s.z);
+          if (!p) continue;
+          ctx.fillStyle = "rgba(148, 163, 184, " + Math.min(0.7, p.scale * 0.9) + ")";
+          ctx.beginPath();
+          ctx.arc(p.sx, p.sy, Math.max(0.5, s.r * p.scale), 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        // Orbital rings around center core
+        const ringRadii = [190, 300, 410];
+        for (const rr of ringRadii) {
+          ctx.beginPath();
+          let started = false;
+          for (let a = 0; a <= Math.PI * 2 + 0.1; a += 0.12) {
+            const p = project(Math.cos(a) * rr, 0, Math.sin(a) * rr);
+            if (!p) continue;
+            if (!started) { ctx.moveTo(p.sx, p.sy); started = true; }
+            else ctx.lineTo(p.sx, p.sy);
+          }
+          ctx.strokeStyle = "rgba(56, 189, 248, 0.18)";
+          ctx.lineWidth = 1;
+          ctx.stroke();
+        }
+
+        // Project nodes & sort back-to-front
+        const projected = [];
+        for (const n of nodes3D) {
+          const p = project(n.x, n.y, n.z);
+          if (!p) continue;
+          n.screenX = p.sx;
+          n.screenY = p.sy;
+          n.screenR = Math.max(5, n.radius * p.scale);
+          projected.push({ node: n, p });
+        }
+
+        const coreP = project(0, 0, 0);
+        projected.sort((a, b) => b.p.depth - a.p.depth);
+
+        // Draw energy links to center core
+        if (coreP) {
+          for (const item of projected) {
+            ctx.beginPath();
+            ctx.moveTo(coreP.sx, coreP.sy);
+            ctx.lineTo(item.p.sx, item.p.sy);
+            ctx.strokeStyle = item.node === hoveredNode ? "rgba(0, 245, 212, 0.8)" : "rgba(0, 245, 212, 0.14)";
+            ctx.lineWidth = item.node === hoveredNode ? 1.8 : 0.8;
+            ctx.stroke();
+          }
+
+          // Central LK.OS Core Reactor
+          const cr = 30 * coreP.scale;
+          const grad = ctx.createRadialGradient(coreP.sx, coreP.sy, cr * 0.2, coreP.sx, coreP.sy, cr * 2.1);
+          grad.addColorStop(0, "rgba(0, 245, 212, 0.95)");
+          grad.addColorStop(0.5, "rgba(56, 189, 248, 0.35)");
+          grad.addColorStop(1, "rgba(0, 245, 212, 0)");
+          ctx.fillStyle = grad;
+          ctx.beginPath();
+          ctx.arc(coreP.sx, coreP.sy, cr * 2.1, 0, Math.PI * 2);
+          ctx.fill();
+
+          ctx.fillStyle = "#061020";
+          ctx.strokeStyle = "#00f5d4";
+          ctx.lineWidth = 2;
+          ctx.beginPath();
+          ctx.arc(coreP.sx, coreP.sy, cr, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.stroke();
+
+          ctx.fillStyle = "#f8fafc";
+          ctx.font = "700 " + Math.max(10, Math.round(13 * coreP.scale)) + "px ui-monospace, monospace";
+          ctx.textAlign = "center";
+          ctx.fillText("LK.OS", coreP.sx, coreP.sy + 4);
+        }
+
+        // Draw repository nodes
+        for (const item of projected) {
+          const { node, p } = item;
+          const isHover = node === hoveredNode;
+          const r = node.screenR * (isHover ? 1.35 : 1);
+
+          ctx.fillStyle = node.color;
+          ctx.beginPath();
+          ctx.arc(p.sx, p.sy, r, 0, Math.PI * 2);
+          ctx.fill();
+
+          ctx.strokeStyle = isHover ? "#ffffff" : "rgba(255,255,255,0.4)";
+          ctx.lineWidth = isHover ? 2 : 1;
+          ctx.stroke();
+
+          if (p.scale > 0.65 || isHover) {
+            ctx.fillStyle = isHover ? "#00f5d4" : "#e2e8f0";
+            ctx.font = (isHover ? "700 " : "600 ") + Math.max(10, Math.round(11 * p.scale)) + "px ui-monospace, monospace";
+            ctx.textAlign = "center";
+            ctx.fillText(node.repo.name, p.sx, p.sy - r - 6);
+          }
+        }
+      }
+      requestAnimationFrame(drawFrame);
+    }
+
+    function findHit(cx, cy) {
+      for (let i = nodes3D.length - 1; i >= 0; i--) {
+        const n = nodes3D[i];
+        const dx = cx - n.screenX;
+        const dy = cy - n.screenY;
+        if (dx * dx + dy * dy <= (n.screenR + 8) * (n.screenR + 8)) return n;
+      }
+      return null;
+    }
+
+    canvas.addEventListener("pointerdown", (e) => {
+      dragging = true;
+      moved = false;
+      lastX = e.clientX;
+      lastY = e.clientY;
+      canvas.setPointerCapture(e.pointerId);
+    });
+
+    canvas.addEventListener("pointermove", (e) => {
+      const rect = canvas.getBoundingClientRect();
+      const cx = e.clientX - rect.left;
+      const cy = e.clientY - rect.top;
+
+      if (dragging) {
+        const dx = e.clientX - lastX;
+        const dy = e.clientY - lastY;
+        if (Math.abs(dx) > 2 || Math.abs(dy) > 2) moved = true;
+        yaw += dx * 0.006;
+        pitch = Math.max(-1.1, Math.min(1.1, pitch + dy * 0.006));
+        lastX = e.clientX;
+        lastY = e.clientY;
+      }
+
+      hoveredNode = findHit(cx, cy);
+      if (hoveredNode) {
+        canvas.style.cursor = "pointer";
+        tooltipEl.textContent = hoveredNode.repo.name + " [" + (hoveredNode.repo.language || "Core") + "] — Click to inspect";
+        tooltipEl.style.left = cx + "px";
+        tooltipEl.style.top = cy + "px";
+        tooltipEl.classList.remove("hidden");
+      } else {
+        canvas.style.cursor = dragging ? "grabbing" : "grab";
+        tooltipEl.classList.add("hidden");
+      }
+    });
+
+    canvas.addEventListener("pointerup", (e) => {
+      if (!moved && hoveredNode) {
+        openRepoDialog(hoveredNode.repo);
+      }
+      dragging = false;
+      if (canvas.hasPointerCapture(e.pointerId)) {
+        canvas.releasePointerCapture(e.pointerId);
+      }
+    });
+
+    canvas.addEventListener("wheel", (e) => {
+      e.preventDefault();
+      zoom = Math.max(0.55, Math.min(2.0, zoom - e.deltaY * 0.0008));
+    }, { passive: false });
+
+    window.addEventListener("resize", resizeCanvas);
+
+    build3DNodes();
+    renderProfileUI();
+    resizeCanvas();
+    requestAnimationFrame(drawFrame);
+    syncLiveGitHub();
+  </script>
+</body>
+</html>

@@ -9,8 +9,12 @@
 </p>
 
 <p align="center">
+  <a href="https://lokeshkumar143.github.io/lokeshkumar143/">
+    <img src="https://img.shields.io/badge/Launch_Interactive-3D_%2F_2D_Live_Portfolio-00F5D4?style=for-the-badge&logo=vercel&logoColor=050A14&labelColor=050A14" alt="Launch Interactive 3D/2D Live Portfolio" />
+  </a>
+  &nbsp;
   <a href="https://linkedin.com/in/lokesh-kumar-s-16984a268/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-00F5D4?style=for-the-badge&logo=linkedin&logoColor=050A14&labelColor=050A14" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-38BDF8?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=050A14" alt="LinkedIn" />
   </a>
   &nbsp;
   <a href="mailto:lokeshkumar142005@gmail.com">
@@ -18,14 +22,26 @@
   </a>
   &nbsp;
   <a href="https://leetcode.com/lokeshkumar143">
-    <img src="https://img.shields.io/badge/LeetCode-Algorithms-38BDF8?style=for-the-badge&logo=leetcode&logoColor=white&labelColor=050A14" alt="LeetCode" />
+    <img src="https://img.shields.io/badge/LeetCode-Algorithms-FFA116?style=for-the-badge&logo=leetcode&logoColor=white&labelColor=050A14" alt="LeetCode" />
   </a>
   &nbsp;
-  <a href="https://github.com/lokeshkumar143?tab=repositories">
-    <img src="https://img.shields.io/badge/Repositories-Access_Core-A855F7?style=for-the-badge&logo=github&logoColor=white&labelColor=050A14" alt="Repositories" />
-  </a>
-  &nbsp;
-  <img src="https://komarev.com/ghpvc/?username=lokeshkumar143&label=SIGNALS&color=00F5D4&style=for-the-badge&labelColor=050A14" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=lokeshkumar143&label=SIGNALS&color=A855F7&style=for-the-badge&labelColor=050A14" alt="Profile Views" />
+</p>
+
+---
+
+<h2 align="center">🌌 LIVE 3D &amp; 2D GITHUB UNIVERSE (AUTO-SYNCED FROM LIVE API)</h2>
+
+<p align="center">
+  <sub>Pulled automatically from <code>@lokeshkumar143</code>'s live GitHub repositories every 6 hours via GitHub Actions &bull; <a href="https://lokeshkumar143.github.io/lokeshkumar143/"><b>Open Interactive 3D / 2D Web Universe &rarr;</b></a></sub>
+</p>
+
+<p align="center">
+  <img src="assets/live-3d-universe.svg" width="100%" alt="Live 3D Isometric GitHub Repository Universe" />
+</p>
+
+<p align="center">
+  <img src="assets/live-2d-blueprint.svg" width="100%" alt="Live 2D Architectural Repository Matrix" />
 </p>
 
 ---
@@ -70,8 +86,8 @@
     </ul>
   </details>
   <br />
-  <a href="https://github.com/lokeshkumar143?tab=repositories">
-    <img src="https://img.shields.io/badge/Access_Blueprint-GitHub_Repos-00F5D4?style=for-the-badge&logo=github&logoColor=050A14&labelColor=050A14" alt="View Personal Fitness Trainer Repositories" />
+  <a href="https://github.com/lokeshkumar143/RecovFit.ios">
+    <img src="https://img.shields.io/badge/Open_Live_Repo-RecovFit.ios_(Swift)-00F5D4?style=for-the-badge&logo=swift&logoColor=050A14&labelColor=050A14" alt="Open RecovFit.ios Repository" />
   </a>
 </td>
 <td width="50%" valign="top">

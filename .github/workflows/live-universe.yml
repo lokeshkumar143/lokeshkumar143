@@ -1,0 +1,41 @@
+name: Sync Live 3D & 2D GitHub Universe
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/sync_github_universe.py"
+      - ".github/workflows/live-universe.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate Live 3D & 2D GitHub SVGs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/sync_github_universe.py
+
+      - name: Commit & Push Updated Universe SVGs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/live-3d-universe.svg assets/live-2d-blueprint.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: sync live 3D & 2D GitHub universe"
+            git push
+          fi
+
