@@ -469,6 +469,8 @@
       <button id="btn-3d" class="btn active" type="button">3D Universe</button>
       <button id="btn-2d" class="btn" type="button">2D Blueprint</button>
       <button id="motion-toggle" class="btn btn-accent" type="button">Pause Motion</button>
+      <a class="btn" href="https://github.com/lokeshkumar143/Portfolio" target="_blank" rel="noopener noreferrer">Cinematic Portfolio</a>
+      <a class="btn" href="https://result-five-zeta.vercel.app" target="_blank" rel="noopener noreferrer">Live Vercel App</a>
       <a class="btn" href="https://github.com/lokeshkumar143" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
     </div>
   </header>
@@ -561,6 +563,7 @@
       <form method="dialog">
         <button class="btn" value="cancel" autofocus>Close</button>
       </form>
+      <a id="dlg-live-btn" class="btn btn-accent hidden" href="#" target="_blank" rel="noopener noreferrer">Launch Live App &rarr;</a>
       <a id="dlg-link" class="btn active" href="https://github.com/lokeshkumar143" target="_blank" rel="noopener noreferrer">Open on GitHub &rarr;</a>
     </div>
   </dialog>
@@ -641,6 +644,15 @@
       document.getElementById("dlg-title").textContent = repo.name;
       document.getElementById("dlg-desc").textContent = repo.description || "Production or academic repository in @" + USERNAME + "'s GitHub universe.";
       document.getElementById("dlg-link").href = repo.html_url;
+
+      const liveBtn = document.getElementById("dlg-live-btn");
+      const liveUrl = repo.homepage || (repo.name === "Result" ? "https://result-five-zeta.vercel.app" : (repo.name === "teddy_bear" ? "https://lokeshkumar143.github.io/teddy_bear/" : null));
+      if (liveUrl) {
+        liveBtn.href = liveUrl;
+        liveBtn.classList.remove("hidden");
+      } else {
+        liveBtn.classList.add("hidden");
+      }
 
       const metrics = document.getElementById("dlg-metrics");
       metrics.textContent = "";

@@ -33,6 +33,29 @@ LANG_COLORS = {
 }
 
 
+FALLBACK_USER = {
+    "login": USERNAME,
+    "name": "Lokesh Kumar .S",
+    "avatar_url": "https://avatars.githubusercontent.com/u/129879377?v=4",
+    "html_url": f"https://github.com/{USERNAME}",
+    "public_repos": 22,
+    "followers": 1,
+    "following": 1,
+}
+
+FALLBACK_REPOS = [
+    {"name": "RecovFit.ios", "language": "Swift", "size": 23438, "updated_at": "2025-11-12T03:19:01Z", "stargazers_count": 0},
+    {"name": "Portfolio", "language": "JavaScript", "size": 131925, "updated_at": "2026-11-05T09:15:34Z", "stargazers_count": 0},
+    {"name": "Result", "language": "TypeScript", "size": 139, "updated_at": "2026-04-23T13:27:32Z", "stargazers_count": 0},
+    {"name": "teddy_bear", "language": "JavaScript", "size": 17070, "updated_at": "2026-11-09T14:37:30Z", "stargazers_count": 0},
+    {"name": "Testing-Class", "language": None, "size": 0, "updated_at": "2026-06-13T07:08:29Z", "stargazers_count": 0},
+    {"name": "DWDM---CSA1678", "language": "R", "size": 3696, "updated_at": "2024-09-13T03:54:28Z", "stargazers_count": 0},
+    {"name": "Resume-", "language": None, "size": 2, "updated_at": "2025-07-12T09:16:29Z", "stargazers_count": 0},
+    {"name": "slot-D-Cpp-program", "language": None, "size": 4015, "updated_at": "2023-10-30T02:52:37Z", "stargazers_count": 0},
+    {"name": "CSA0880-PYTHON", "language": None, "size": 1421, "updated_at": "2023-04-05T15:50:28Z", "stargazers_count": 0},
+]
+
+
 def fetch_json(url: str, token: str | None = None) -> dict | list:
     headers = {
         "Accept": "application/vnd.github+json",
@@ -50,12 +73,17 @@ def load_data(user_file: str | None, repos_file: str | None) -> tuple[dict, list
         with open(user_file, encoding="utf-8") as f1, open(repos_file, encoding="utf-8") as f2:
             return json.load(f1), json.load(f2)
     token = os.environ.get("GITHUB_TOKEN")
-    user = fetch_json(f"https://api.github.com/users/{USERNAME}", token)
-    repos = fetch_json(
-        f"https://api.github.com/users/{USERNAME}/repos?sort=updated&per_page=100",
-        token,
-    )
-    return user, repos
+    try:
+        user = fetch_json(f"https://api.github.com/users/{USERNAME}", token)
+        repos = fetch_json(
+            f"https://api.github.com/users/{USERNAME}/repos?sort=updated&per_page=100",
+            token,
+        )
+        if isinstance(user, dict) and isinstance(repos, list):
+            return user, repos
+    except Exception as exc:
+        print(f"Warning: GitHub API error ({exc}); using fallback cache.")
+    return FALLBACK_USER, FALLBACK_REPOS
 
 
 def iso_project(x: float, y: float, z: float, cx: float, cy: float) -> tuple[float, float]:

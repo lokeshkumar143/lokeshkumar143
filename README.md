@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/header.svg" width="100%" alt="Lokesh Kumar S — Futuristic Neural Command HUD" />
+  <img src="assets/header.svg" width="100%" alt="Lokesh Kumar S — Futuristic Neural Command HUD with Live Avatar" />
 </p>
 
 <p align="center">
@@ -10,11 +10,23 @@
 
 <p align="center">
   <a href="https://lokeshkumar143.github.io/lokeshkumar143/">
-    <img src="https://img.shields.io/badge/Launch_Interactive-3D_%2F_2D_Live_Portfolio-00F5D4?style=for-the-badge&logo=vercel&logoColor=050A14&labelColor=050A14" alt="Launch Interactive 3D/2D Live Portfolio" />
+    <img src="https://img.shields.io/badge/Launch_Live_Web-3D_%2F_2D_Portfolio-00F5D4?style=for-the-badge&logo=vercel&logoColor=050A14&labelColor=050A14" alt="Launch Live 3D/2D Web Portfolio" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/lokeshkumar143/Portfolio">
+    <img src="https://img.shields.io/badge/Flagship-Cinematic_Portfolio-FACC15?style=for-the-badge&logo=javascript&logoColor=050A14&labelColor=050A14" alt="Cinematic Portfolio Codebase" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/lokeshkumar143/RecovFit.ios">
+    <img src="https://img.shields.io/badge/iOS_App-RecovFit.ios-F05138?style=for-the-badge&logo=swift&logoColor=white&labelColor=050A14" alt="RecovFit.ios Swift Repo" />
+  </a>
+  &nbsp;
+  <a href="https://result-five-zeta.vercel.app">
+    <img src="https://img.shields.io/badge/Live_App-Result_on_Vercel-38BDF8?style=for-the-badge&logo=typescript&logoColor=white&labelColor=050A14" alt="Result Live Deployment" />
   </a>
   &nbsp;
   <a href="https://linkedin.com/in/lokesh-kumar-s-16984a268/">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-38BDF8?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=050A14" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-00F5D4?style=for-the-badge&logo=linkedin&logoColor=050A14&labelColor=050A14" alt="LinkedIn" />
   </a>
   &nbsp;
   <a href="mailto:lokeshkumar142005@gmail.com">
@@ -66,16 +78,16 @@
 
 ---
 
-<h2 align="center">🛸 HOLOGRAPHIC PROJECT BLUEPRINTS</h2>
+<h2 align="center">🛸 HOLOGRAPHIC FLAGSHIP BLUEPRINTS</h2>
 
 <p align="center">
-  <img src="assets/projects-showcase.svg" width="100%" alt="Animated Project Blueprints — Personal Fitness Trainer and Smart Ulcer Predictor" />
+  <img src="assets/projects-showcase.svg" width="100%" alt="Animated 4-Card Flagship Blueprints — RecovFit.ios, Cinematic Portfolio, Result on Vercel, Smart Ulcer Predictor" />
 </p>
 
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
-  <h3>🏥 Personal Fitness Trainer (Patient Recovery)</h3>
+  <h3>🏥 RecovFit.ios &bull; Patient Recovery</h3>
   <p>End-to-end native iOS recovery platform connecting patients and clinicians with appointment scheduling, real-time <b>PHP/MySQL</b> sync, and an <b>in-app AI conversational assistant</b>.</p>
   <details>
     <summary><b>Inspect Architecture Specs</b></summary>
@@ -87,7 +99,45 @@
   </details>
   <br />
   <a href="https://github.com/lokeshkumar143/RecovFit.ios">
-    <img src="https://img.shields.io/badge/Open_Live_Repo-RecovFit.ios_(Swift)-00F5D4?style=for-the-badge&logo=swift&logoColor=050A14&labelColor=050A14" alt="Open RecovFit.ios Repository" />
+    <img src="https://img.shields.io/badge/Open_Swift_Codebase-RecovFit.ios-00F5D4?style=for-the-badge&logo=swift&logoColor=050A14&labelColor=050A14" alt="Open RecovFit.ios Repository" />
+  </a>
+</td>
+<td width="50%" valign="top">
+  <h3>🎬 Cinematic WebGL Portfolio</h3>
+  <p>Full-scale cinematic developer universe built with <b>native WebGL</b> and modern web standards. Features custom alpha-matte video compositing, a 2021&ndash;2026 chrono chamber, and a 3D project arena.</p>
+  <details>
+    <summary><b>Inspect Architecture Specs</b></summary>
+    <ul>
+      <li><b>WebGL Compositor:</b> Offline background modelling &amp; real-time double-width alpha video playback</li>
+      <li><b>Interactive 3D:</b> Clockwork timeline rail, concentric orbital gears, and 3D tilt physics</li>
+      <li><b>Zero-Build:</b> 132 MB production assets running with zero compiler overhead</li>
+    </ul>
+  </details>
+  <br />
+  <a href="https://github.com/lokeshkumar143/Portfolio">
+    <img src="https://img.shields.io/badge/Open_Portfolio-GitHub_Repo-FACC15?style=for-the-badge&logo=github&logoColor=050A14&labelColor=050A14" alt="Open Portfolio Repository" />
+  </a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+  <h3>📊 Result &bull; Examination Analytics</h3>
+  <p>Full-stack <b>TypeScript &amp; React</b> platform deployed live on Vercel calculating semester SGPA/CGPA and rendering real-time performance analytics for students.</p>
+  <details>
+    <summary><b>Inspect Architecture Specs</b></summary>
+    <ul>
+      <li><b>Architecture:</b> Type-safe state management, instant grade calculations, and GPA trends</li>
+      <li><b>Production:</b> Deployed on Vercel CI/CD with sub-second page loads</li>
+      <li><b>UI System:</b> Modern responsive interface built with Tailwind CSS</li>
+    </ul>
+  </details>
+  <br />
+  <a href="https://result-five-zeta.vercel.app">
+    <img src="https://img.shields.io/badge/Launch_Live_App-Vercel_Production-38BDF8?style=for-the-badge&logo=vercel&logoColor=white&labelColor=050A14" alt="Launch Result on Vercel" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/lokeshkumar143/Result">
+    <img src="https://img.shields.io/badge/Source_Code-Result_(TS)-050A14?style=for-the-badge&logo=typescript&logoColor=38BDF8&labelColor=050A14" alt="Open Result Repository" />
   </a>
 </td>
 <td width="50%" valign="top">
