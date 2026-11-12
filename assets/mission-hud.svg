@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 244" width="100%" role="img" aria-label="Animated Cybernetic Career Telemetry Deck">
+  <defs>
+    <linearGradient id="m-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050A14" />
+      <stop offset="100%" stop-color="#0A1222" />
+    </linearGradient>
+    <filter id="m-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .mono { font-family: ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace; }
+      @keyframes dashFlow {
+        to { stroke-dashoffset: -80; }
+      }
+      .dash-flow { stroke-dasharray: 8 8; animation: dashFlow 2.2s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Module 1: Hyper-Velocity -->
+  <rect x="8" y="8" width="465" height="108" rx="14" fill="url(#m-bg)" stroke="#00F5D4" stroke-opacity="0.45" stroke-width="1.3" />
+  <path d="M 16 26 L 16 14 L 28 14" fill="none" stroke="#00F5D4" stroke-width="2" />
+  <text x="32" y="34" class="mono" font-size="10.5" font-weight="700" fill="#00F5D4" letter-spacing="1.2">SYS.01 // HYPER-VELOCITY</text>
+  <text x="32" y="58" class="sans" font-size="16" font-weight="800" fill="#F8FAFC">Intern &#8594; Full-Time in 2 Months</text>
+  <text x="32" y="79" class="sans" font-size="12" fill="#94A3B8">Fast-tracked at SIMATS Engineering Institution for</text>
+  <text x="32" y="96" class="sans" font-size="12" fill="#94A3B8">end-to-end iOS architecture &amp; production delivery.</text>
+  <!-- Animated Trajectory Graph + Photon -->
+  <path id="traj-path" d="M 366 86 Q 396 82 414 58 T 452 28" fill="none" stroke="#00F5D4" stroke-opacity="0.3" stroke-width="2" />
+  <path d="M 366 86 Q 396 82 414 58 T 452 28" fill="none" stroke="#00F5D4" stroke-width="2" class="dash-flow" filter="url(#m-glow)" />
+  <circle r="4" fill="#FFFFFF" filter="url(#m-glow)">
+    <animateMotion dur="2.2s" repeatCount="indefinite">
+      <mpath href="#traj-path" />
+    </animateMotion>
+  </circle>
+
+  <!-- Module 2: Spatial & Native iOS -->
+  <rect x="487" y="8" width="465" height="108" rx="14" fill="url(#m-bg)" stroke="#38BDF8" stroke-opacity="0.45" stroke-width="1.3" />
+  <path d="M 495 26 L 495 14 L 507 14" fill="none" stroke="#38BDF8" stroke-width="2" />
+  <text x="511" y="34" class="mono" font-size="10.5" font-weight="700" fill="#38BDF8" letter-spacing="1.2">SYS.02 // NATIVE APPLE CORE</text>
+  <text x="511" y="58" class="sans" font-size="16" font-weight="800" fill="#F8FAFC">SwiftUI &#183; UIKit &#183; App Store</text>
+  <text x="511" y="79" class="sans" font-size="12" fill="#94A3B8">Clean Architecture, Core Location, MapKit, REST APIs,</text>
+  <text x="511" y="96" class="sans" font-size="12" fill="#94A3B8">Firebase Realtime DB, Push Alerts &amp; PHP/MySQL.</text>
+  <!-- Animated Rotating Dual Gyro -->
+  <g transform="translate(894, 62)">
+    <circle cx="0" cy="0" r="24" fill="none" stroke="#38BDF8" stroke-width="1.4" stroke-dasharray="10 6">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="0" cy="0" r="15" fill="none" stroke="#00F5D4" stroke-width="1.5" stroke-dasharray="6 6">
+      <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <text x="0" y="3.5" text-anchor="middle" class="mono" font-size="9" font-weight="700" fill="#E2E8F0">iOS</text>
+  </g>
+
+  <!-- Module 3: 4-Layer QA Shield -->
+  <rect x="8" y="128" width="465" height="108" rx="14" fill="url(#m-bg)" stroke="#FF2E63" stroke-opacity="0.45" stroke-width="1.3" />
+  <path d="M 16 146 L 16 134 L 28 134" fill="none" stroke="#FF2E63" stroke-width="2" />
+  <text x="32" y="154" class="mono" font-size="10.5" font-weight="700" fill="#FF2E63" letter-spacing="1.2">SYS.03 // 4-LAYER QA SHIELD</text>
+  <text x="32" y="178" class="sans" font-size="16" font-weight="800" fill="#F8FAFC">Automation, Load &amp; Security</text>
+  <text x="32" y="199" class="sans" font-size="12" fill="#94A3B8">Appium &amp; Selenium E2E suites, Postman API contracts,</text>
+  <text x="32" y="216" class="sans" font-size="12" fill="#94A3B8">high-concurrency Load &amp; Security Vulnerability checks.</text>
+  <!-- Animated Radar Shield -->
+  <g transform="translate(415, 182)">
+    <polygon points="0,-24 21,-12 21,10 0,24 -21,10 -21,-12" fill="#180812" stroke="#FF2E63" stroke-width="1.5" />
+    <line x1="-16" y1="0" x2="16" y2="0" stroke="#00F5D4" stroke-width="1.8" filter="url(#m-glow)">
+      <animate attributeName="y1" values="-14;14;-14" dur="2.4s" repeatCount="indefinite" />
+      <animate attributeName="y2" values="-14;14;-14" dur="2.4s" repeatCount="indefinite" />
+    </line>
+  </g>
+
+  <!-- Module 4: Neural Mentor & AI -->
+  <rect x="487" y="128" width="465" height="108" rx="14" fill="url(#m-bg)" stroke="#A855F7" stroke-opacity="0.45" stroke-width="1.3" />
+  <path d="M 495 146 L 495 134 L 507 134" fill="none" stroke="#A855F7" stroke-width="2" />
+  <text x="511" y="154" class="mono" font-size="10.5" font-weight="700" fill="#C084FC" letter-spacing="1.2">SYS.04 // NEURAL TRAINER &amp; AI</text>
+  <text x="511" y="178" class="sans" font-size="16" font-weight="800" fill="#F8FAFC">Technical Trainer &amp; Oracle AI</text>
+  <text x="511" y="199" class="sans" font-size="12" fill="#94A3B8">Mentoring future engineers @ SIMATS &#8226; B.E. CSE (7.9)</text>
+  <text x="511" y="216" class="sans" font-size="12" fill="#94A3B8">Building AI healthcare diagnostics &amp; smart assistants.</text>
+  <!-- Animated Neural Synapse Nodes -->
+  <g transform="translate(894, 182)">
+    <line x1="-18" y1="-12" x2="18" y2="-12" stroke="#A855F7" stroke-opacity="0.5" stroke-width="1.2" />
+    <line x1="-18" y1="-12" x2="0" y2="16" stroke="#A855F7" stroke-opacity="0.5" stroke-width="1.2" />
+    <line x1="18" y1="-12" x2="0" y2="16" stroke="#00F5D4" stroke-opacity="0.5" stroke-width="1.2" />
+    <circle cx="-18" cy="-12" r="4.5" fill="#A855F7" filter="url(#m-glow)">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="18" cy="-12" r="4.5" fill="#00F5D4" filter="url(#m-glow)">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="0" cy="16" r="5" fill="#FF2E63" filter="url(#m-glow)">
+      <animate attributeName="r" values="4;6;4" dur="1.8s" repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg>
